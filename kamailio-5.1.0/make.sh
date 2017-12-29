@@ -2,4 +2,12 @@
 
 
 
+make  
+
+make install 
+
+
+
+
+
 
