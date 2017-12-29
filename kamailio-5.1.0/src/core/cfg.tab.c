@@ -1,8 +1,8 @@
-/* A Bison parser, made by GNU Bison 3.0.2.  */
+/* A Bison parser, made by GNU Bison 3.0.4.  */
 
 /* Bison implementation for Yacc-like parsers in C
 
-   Copyright (C) 1984, 1989-1990, 2000-2013 Free Software Foundation, Inc.
+   Copyright (C) 1984, 1989-1990, 2000-2015 Free Software Foundation, Inc.
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@
 #define YYBISON 1
 
 /* Bison version.  */
-#define YYBISON_VERSION "3.0.2"
+#define YYBISON_VERSION "3.0.4"
 
 /* Skeleton name.  */
 #define YYSKELETON_NAME "yacc.c"
@@ -603,7 +603,7 @@ extern int yydebug;
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef union YYSTYPE YYSTYPE;
+
 union YYSTYPE
 {
 #line 199 "core/cfg.y" /* yacc.c:355  */
@@ -627,6 +627,8 @@ union YYSTYPE
 
 #line 629 "core/cfg.tab.c" /* yacc.c:355  */
 };
+
+typedef union YYSTYPE YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
@@ -640,7 +642,7 @@ int yyparse (void);
 
 /* Copy the second part of user declarations.  */
 
-#line 644 "core/cfg.tab.c" /* yacc.c:358  */
+#line 646 "core/cfg.tab.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -4943,49 +4945,49 @@ yyreduce:
         case 3:
 #line 615 "core/cfg.y" /* yacc.c:1646  */
     {}
-#line 4947 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 4949 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 4:
 #line 616 "core/cfg.y" /* yacc.c:1646  */
     {}
-#line 4953 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 4955 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 5:
 #line 617 "core/cfg.y" /* yacc.c:1646  */
     { yyerror(""); YYABORT;}
-#line 4959 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 4961 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 11:
 #line 625 "core/cfg.y" /* yacc.c:1646  */
     {rt=REQUEST_ROUTE;}
-#line 4965 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 4967 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 13:
 #line 626 "core/cfg.y" /* yacc.c:1646  */
     {rt=FAILURE_ROUTE;}
-#line 4971 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 4973 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 16:
 #line 628 "core/cfg.y" /* yacc.c:1646  */
     {rt=BRANCH_ROUTE;}
-#line 4977 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 4979 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 18:
 #line 629 "core/cfg.y" /* yacc.c:1646  */
     {rt=ONSEND_ROUTE;}
-#line 4983 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 4985 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 20:
 #line 630 "core/cfg.y" /* yacc.c:1646  */
     {rt=EVENT_ROUTE;}
-#line 4989 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 4991 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 24:
@@ -5006,7 +5008,7 @@ yyreduce:
 			}
 		}
 	}
-#line 5010 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5012 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 25:
@@ -5019,7 +5021,7 @@ yyreduce:
 				strncpy((yyval.strval), (yyvsp[0].strval), strlen((yyvsp[0].strval))+1);
 		}
 	}
-#line 5023 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5025 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 26:
@@ -5034,13 +5036,13 @@ yyreduce:
 			}
 		}
 	}
-#line 5038 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5040 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 27:
 #line 673 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.name_l)=mk_name_lst((yyvsp[0].strval), SI_IS_MHOMED); }
-#line 5044 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5046 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 28:
@@ -5048,187 +5050,187 @@ yyreduce:
     { (yyval.name_l)=mk_name_lst((yyvsp[-2].strval), SI_IS_MHOMED);
 										if ((yyval.name_l)) (yyval.name_l)->next=(yyvsp[0].name_l);
 									}
-#line 5052 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5054 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 29:
 #line 680 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.name_l)=(yyvsp[-1].name_l); }
-#line 5058 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5060 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 30:
 #line 681 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.name_l)=mk_name_lst((yyvsp[0].strval), 0); }
-#line 5064 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5066 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 31:
 #line 685 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=PROTO_UDP; }
-#line 5070 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5072 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 32:
 #line 686 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=PROTO_TCP; }
-#line 5076 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5078 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 33:
 #line 687 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=PROTO_TLS; }
-#line 5082 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5084 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 34:
 #line 688 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=PROTO_SCTP; }
-#line 5088 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5090 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 35:
 #line 689 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=0; }
-#line 5094 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5096 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 36:
 #line 692 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=PROTO_UDP; }
-#line 5100 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5102 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 37:
 #line 693 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=PROTO_TCP; }
-#line 5106 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5108 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 38:
 #line 694 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=PROTO_TLS; }
-#line 5112 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5114 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 39:
 #line 695 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=PROTO_SCTP; }
-#line 5118 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5120 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 40:
 #line 696 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=PROTO_WS; }
-#line 5124 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5126 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 41:
 #line 697 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=PROTO_WSS; }
-#line 5130 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5132 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 42:
 #line 698 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=0; }
-#line 5136 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5138 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 43:
 #line 701 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=(yyvsp[0].intval); }
-#line 5142 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5144 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 44:
 #line 702 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=0; }
-#line 5148 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5150 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 45:
 #line 705 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.sockid)=mk_listen_id((yyvsp[0].strval), 0, 0); }
-#line 5154 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5156 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 46:
 #line 706 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.sockid)=mk_listen_id((yyvsp[-2].strval), 0, (yyvsp[0].intval)); }
-#line 5160 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5162 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 47:
 #line 707 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.sockid)=mk_listen_id((yyvsp[0].strval), (yyvsp[-2].intval), 0); }
-#line 5166 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5168 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 48:
 #line 708 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.sockid)=mk_listen_id((yyvsp[-2].strval), (yyvsp[-4].intval), (yyvsp[0].intval));}
-#line 5172 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5174 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 49:
 #line 709 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.sockid)=0; yyerror("port number expected"); }
-#line 5178 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5180 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 50:
 #line 713 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.sockid)=mk_listen_id2((yyvsp[0].name_l), 0, 0); }
-#line 5184 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5186 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 51:
 #line 714 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.sockid)=mk_listen_id2((yyvsp[-2].name_l), 0, (yyvsp[0].intval)); }
-#line 5190 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5192 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 52:
 #line 715 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.sockid)=mk_listen_id2((yyvsp[0].name_l), (yyvsp[-2].intval), 0); }
-#line 5196 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5198 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 53:
 #line 716 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.sockid)=mk_listen_id2((yyvsp[-2].name_l), (yyvsp[-4].intval), (yyvsp[0].intval));}
-#line 5202 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5204 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 54:
 #line 717 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.sockid)=0; yyerror("port number expected"); }
-#line 5208 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5210 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 55:
 #line 721 "core/cfg.y" /* yacc.c:1646  */
     {  (yyval.sockid)=(yyvsp[0].sockid) ; }
-#line 5214 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5216 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 56:
 #line 722 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.sockid)=(yyvsp[-1].sockid);  if ((yyval.sockid)) (yyval.sockid)->next=(yyvsp[0].sockid); }
-#line 5220 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5222 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 58:
 #line 726 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=-(yyvsp[0].intval); }
-#line 5226 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5228 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 60:
 #line 730 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("flag list expected\n"); }
-#line 5232 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5234 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 63:
@@ -5236,7 +5238,7 @@ yyreduce:
     { if (register_flag((yyvsp[0].strval),-1)<0)
 								yyerror("register flag failed");
 						}
-#line 5240 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5242 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 64:
@@ -5245,25 +5247,25 @@ yyreduce:
 						if (register_flag((yyvsp[-2].strval), (yyvsp[0].intval))<0)
 								yyerror("register flag failed");
 										}
-#line 5249 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5251 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 65:
 #line 745 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.strval)=(yyvsp[0].strval); }
-#line 5255 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5257 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 66:
 #line 746 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.strval)=(yyvsp[0].strval); }
-#line 5261 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5263 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 68:
 #line 751 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("avpflag list expected\n"); }
-#line 5267 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5269 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 71:
@@ -5272,55 +5274,55 @@ yyreduce:
 		if (register_avpflag((yyvsp[0].strval))==0)
 			yyerror("cannot declare avpflag");
 	}
-#line 5276 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5278 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 72:
 #line 764 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.debug=(yyvsp[0].intval); }
-#line 5282 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5284 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 73:
 #line 765 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number  expected"); }
-#line 5288 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5290 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 74:
 #line 766 "core/cfg.y" /* yacc.c:1646  */
     { dont_fork= ! (yyvsp[0].intval); }
-#line 5294 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5296 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 75:
 #line 767 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5300 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5302 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 76:
 #line 768 "core/cfg.y" /* yacc.c:1646  */
     { set_fork_delay((yyvsp[0].intval)); }
-#line 5306 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5308 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 77:
 #line 769 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5312 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5314 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 78:
 #line 770 "core/cfg.y" /* yacc.c:1646  */
     { set_modinit_delay((yyvsp[0].intval)); }
-#line 5318 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5320 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 79:
 #line 771 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5324 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5326 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 80:
@@ -5328,13 +5330,13 @@ yyreduce:
     { if (!config_check)  /* if set from cmd line, don't overwrite from yyparse()*/
 					if(log_stderr == 0) log_stderr=(yyvsp[0].intval);
 				   }
-#line 5332 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5334 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 81:
 #line 775 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5338 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5340 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 82:
@@ -5345,422 +5347,422 @@ yyreduce:
 		if (!config_check)
 			default_core_cfg.log_facility=i_tmp;
 	}
-#line 5349 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5351 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 83:
 #line 782 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("ID expected"); }
-#line 5355 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5357 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 84:
 #line 783 "core/cfg.y" /* yacc.c:1646  */
     { log_name=(yyvsp[0].strval); }
-#line 5361 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5363 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 85:
 #line 784 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 5367 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5369 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 86:
 #line 785 "core/cfg.y" /* yacc.c:1646  */
     { log_color=(yyvsp[0].intval); }
-#line 5373 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5375 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 87:
 #line 786 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5379 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5381 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 88:
 #line 787 "core/cfg.y" /* yacc.c:1646  */
     { log_prefix_fmt=(yyvsp[0].strval); }
-#line 5385 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5387 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 89:
 #line 788 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 5391 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5393 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 90:
 #line 789 "core/cfg.y" /* yacc.c:1646  */
     { log_prefix_mode=(yyvsp[0].intval); }
-#line 5397 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5399 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 91:
 #line 790 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5403 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5405 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 92:
 #line 791 "core/cfg.y" /* yacc.c:1646  */
     { _km_log_engine_type=(yyvsp[0].strval); }
-#line 5409 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5411 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 93:
 #line 792 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 5415 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5417 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 94:
 #line 793 "core/cfg.y" /* yacc.c:1646  */
     { _km_log_engine_data=(yyvsp[0].strval); }
-#line 5421 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5423 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 95:
 #line 794 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 5427 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5429 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 96:
 #line 795 "core/cfg.y" /* yacc.c:1646  */
     { received_dns|= ((yyvsp[0].intval))?DO_DNS:0; }
-#line 5433 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5435 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 97:
 #line 796 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5439 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5441 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 98:
 #line 797 "core/cfg.y" /* yacc.c:1646  */
     { received_dns|= ((yyvsp[0].intval))?DO_REV_DNS:0; }
-#line 5445 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5447 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 99:
 #line 798 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5451 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5453 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 100:
 #line 799 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.dns_try_ipv6=(yyvsp[0].intval); }
-#line 5457 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5459 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 101:
 #line 800 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5463 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5465 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 102:
 #line 801 "core/cfg.y" /* yacc.c:1646  */
     { IF_NAPTR(default_core_cfg.dns_try_naptr=(yyvsp[0].intval)); }
-#line 5469 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5471 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 103:
 #line 802 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5475 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5477 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 104:
 #line 803 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_FAILOVER(default_core_cfg.dns_srv_lb=(yyvsp[0].intval)); }
-#line 5481 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5483 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 105:
 #line 804 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5487 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5489 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 106:
 #line 805 "core/cfg.y" /* yacc.c:1646  */
     { IF_NAPTR(default_core_cfg.dns_udp_pref=(yyvsp[0].intval));}
-#line 5493 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5495 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 107:
 #line 806 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5499 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5501 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 108:
 #line 807 "core/cfg.y" /* yacc.c:1646  */
     { IF_NAPTR(default_core_cfg.dns_tcp_pref=(yyvsp[0].intval));}
-#line 5505 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5507 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 109:
 #line 808 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5511 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5513 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 110:
 #line 809 "core/cfg.y" /* yacc.c:1646  */
     { IF_NAPTR(default_core_cfg.dns_tls_pref=(yyvsp[0].intval));}
-#line 5517 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5519 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 111:
 #line 810 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5523 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5525 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 112:
 #line 811 "core/cfg.y" /* yacc.c:1646  */
     {
 								IF_NAPTR(default_core_cfg.dns_sctp_pref=(yyvsp[0].intval)); }
-#line 5530 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5532 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 113:
 #line 813 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5536 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5538 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 114:
 #line 814 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.dns_retr_time=(yyvsp[0].intval); }
-#line 5542 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5544 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 115:
 #line 815 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5548 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5550 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 116:
 #line 816 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.dns_retr_no=(yyvsp[0].intval); }
-#line 5554 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5556 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 117:
 #line 817 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5560 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5562 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 118:
 #line 818 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.dns_servers_no=(yyvsp[0].intval); }
-#line 5566 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5568 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 119:
 #line 819 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5572 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5574 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 120:
 #line 820 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.dns_search_list=(yyvsp[0].intval); }
-#line 5578 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5580 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 121:
 #line 821 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5584 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5586 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 122:
 #line 822 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.dns_search_fmatch=(yyvsp[0].intval); }
-#line 5590 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5592 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 123:
 #line 823 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5596 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5598 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 124:
 #line 824 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.dns_naptr_ignore_rfc=(yyvsp[0].intval); }
-#line 5602 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5604 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 125:
 #line 825 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5608 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5610 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 126:
 #line 826 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_CACHE(dns_cache_init=(yyvsp[0].intval)); }
-#line 5614 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5616 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 127:
 #line 827 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5620 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5622 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 128:
 #line 828 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_CACHE(default_core_cfg.use_dns_cache=(yyvsp[0].intval)); }
-#line 5626 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5628 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 129:
 #line 829 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5632 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5634 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 130:
 #line 830 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_FAILOVER(default_core_cfg.use_dns_failover=(yyvsp[0].intval));}
-#line 5638 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5640 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 131:
 #line 831 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5644 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5646 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 132:
 #line 832 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_CACHE(default_core_cfg.dns_cache_flags=(yyvsp[0].intval)); }
-#line 5650 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5652 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 133:
 #line 833 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5656 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5658 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 134:
 #line 834 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_CACHE(default_core_cfg.dns_neg_cache_ttl=(yyvsp[0].intval)); }
-#line 5662 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5664 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 135:
 #line 835 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5668 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5670 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 136:
 #line 836 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_CACHE(default_core_cfg.dns_cache_max_ttl=(yyvsp[0].intval)); }
-#line 5674 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5676 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 137:
 #line 837 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5680 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5682 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 138:
 #line 838 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_CACHE(default_core_cfg.dns_cache_min_ttl=(yyvsp[0].intval)); }
-#line 5686 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5688 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 139:
 #line 839 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5692 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5694 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 140:
 #line 840 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_CACHE(default_core_cfg.dns_cache_max_mem=(yyvsp[0].intval)); }
-#line 5698 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5700 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 141:
 #line 841 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5704 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5706 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 142:
 #line 842 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_CACHE(dns_timer_interval=(yyvsp[0].intval)); }
-#line 5710 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5712 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 143:
 #line 843 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5716 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5718 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 144:
 #line 844 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_CACHE(default_core_cfg.dns_cache_del_nonexp=(yyvsp[0].intval)); }
-#line 5722 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5724 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 145:
 #line 845 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5728 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5730 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 146:
 #line 846 "core/cfg.y" /* yacc.c:1646  */
     { IF_DNS_CACHE(default_core_cfg.dns_cache_rec_pref=(yyvsp[0].intval)); }
-#line 5734 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5736 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 147:
 #line 847 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5740 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5742 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 148:
 #line 848 "core/cfg.y" /* yacc.c:1646  */
     {IF_AUTO_BIND_IPV6(auto_bind_ipv6 = (yyvsp[0].intval));}
-#line 5746 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5748 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 149:
 #line 849 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5752 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5754 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 150:
 #line 850 "core/cfg.y" /* yacc.c:1646  */
     { IF_DST_BLACKLIST(dst_blacklist_init=(yyvsp[0].intval)); }
-#line 5758 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5760 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 151:
 #line 851 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5764 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5766 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 152:
@@ -5768,13 +5770,13 @@ yyreduce:
     {
 		IF_DST_BLACKLIST(default_core_cfg.use_dst_blacklist=(yyvsp[0].intval));
 	}
-#line 5772 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5774 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 153:
 #line 855 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5778 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5780 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 154:
@@ -5782,13 +5784,13 @@ yyreduce:
     {
 		IF_DST_BLACKLIST(default_core_cfg.blst_max_mem=(yyvsp[0].intval));
 	}
-#line 5786 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5788 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 155:
 #line 859 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5792 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5794 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 156:
@@ -5796,25 +5798,25 @@ yyreduce:
     {
 		IF_DST_BLACKLIST(default_core_cfg.blst_timeout=(yyvsp[0].intval));
 	}
-#line 5800 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5802 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 157:
 #line 863 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5806 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5808 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 158:
 #line 864 "core/cfg.y" /* yacc.c:1646  */
     { IF_DST_BLACKLIST(blst_timer_interval=(yyvsp[0].intval));}
-#line 5812 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5814 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 159:
 #line 865 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5818 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5820 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 160:
@@ -5822,13 +5824,13 @@ yyreduce:
     {
 		IF_DST_BLACKLIST(default_core_cfg.blst_udp_imask=(yyvsp[0].intval));
 	}
-#line 5826 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5828 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 161:
 #line 869 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number(flags) expected"); }
-#line 5832 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5834 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 162:
@@ -5836,13 +5838,13 @@ yyreduce:
     {
 		IF_DST_BLACKLIST(default_core_cfg.blst_tcp_imask=(yyvsp[0].intval));
 	}
-#line 5840 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5842 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 163:
 #line 873 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number(flags) expected"); }
-#line 5846 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5848 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 164:
@@ -5850,13 +5852,13 @@ yyreduce:
     {
 		IF_DST_BLACKLIST(default_core_cfg.blst_tls_imask=(yyvsp[0].intval));
 	}
-#line 5854 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5856 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 165:
 #line 877 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number(flags) expected"); }
-#line 5860 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5862 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 166:
@@ -5864,31 +5866,31 @@ yyreduce:
     {
 		IF_DST_BLACKLIST(default_core_cfg.blst_sctp_imask=(yyvsp[0].intval));
 	}
-#line 5868 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5870 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 167:
 #line 881 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number(flags) expected"); }
-#line 5874 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5876 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 168:
 #line 882 "core/cfg.y" /* yacc.c:1646  */
     { _sr_ip_free_bind=(yyvsp[0].intval); }
-#line 5880 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5882 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 169:
 #line 883 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("int value expected"); }
-#line 5886 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5888 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 170:
 #line 884 "core/cfg.y" /* yacc.c:1646  */
     { port_no=(yyvsp[0].intval); }
-#line 5892 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5894 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 171:
@@ -5898,205 +5900,205 @@ yyreduce:
 				stat_file=(yyvsp[0].strval);
 		#endif
 	}
-#line 5902 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5904 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 172:
 #line 890 "core/cfg.y" /* yacc.c:1646  */
     { maxbuffer=(yyvsp[0].intval); }
-#line 5908 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5910 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 173:
 #line 891 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5914 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5916 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 174:
 #line 892 "core/cfg.y" /* yacc.c:1646  */
     { sql_buffer_size=(yyvsp[0].intval); }
-#line 5920 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5922 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 175:
 #line 893 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5926 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5928 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 176:
 #line 894 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5932 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5934 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 177:
 #line 895 "core/cfg.y" /* yacc.c:1646  */
     { children_no=(yyvsp[0].intval); }
-#line 5938 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5940 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 178:
 #line 896 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5944 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5946 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 179:
 #line 897 "core/cfg.y" /* yacc.c:1646  */
     { socket_workers=(yyvsp[0].intval); }
-#line 5950 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5952 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 180:
 #line 898 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5956 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5958 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 181:
 #line 899 "core/cfg.y" /* yacc.c:1646  */
     { async_task_set_workers((yyvsp[0].intval)); }
-#line 5962 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5964 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 182:
 #line 900 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5968 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5970 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 183:
 #line 901 "core/cfg.y" /* yacc.c:1646  */
     { async_task_set_usleep((yyvsp[0].intval)); }
-#line 5974 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5976 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 184:
 #line 902 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 5980 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5982 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 185:
 #line 903 "core/cfg.y" /* yacc.c:1646  */
     { check_via=(yyvsp[0].intval); }
-#line 5986 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5988 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 186:
 #line 904 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 5992 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 5994 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 187:
 #line 905 "core/cfg.y" /* yacc.c:1646  */
     { phone2tel=(yyvsp[0].intval); }
-#line 5998 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6000 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 188:
 #line 906 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6004 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6006 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 189:
 #line 907 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.memlog=(yyvsp[0].intval); }
-#line 6010 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6012 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 190:
 #line 908 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("int value expected"); }
-#line 6016 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6018 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 191:
 #line 909 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.memdbg=(yyvsp[0].intval); }
-#line 6022 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6024 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 192:
 #line 910 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("int value expected"); }
-#line 6028 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6030 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 193:
 #line 911 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.mem_summary=(yyvsp[0].intval); }
-#line 6034 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6036 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 194:
 #line 912 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("int value expected"); }
-#line 6040 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6042 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 195:
 #line 913 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.mem_safety=(yyvsp[0].intval); }
-#line 6046 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6048 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 196:
 #line 914 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("int value expected"); }
-#line 6052 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6054 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 197:
 #line 915 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.mem_join=(yyvsp[0].intval); }
-#line 6058 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6060 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 198:
 #line 916 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("int value expected"); }
-#line 6064 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6066 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 199:
 #line 917 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.mem_status_mode=(yyvsp[0].intval); }
-#line 6070 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6072 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 200:
 #line 918 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("int value expected"); }
-#line 6076 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6078 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 201:
 #line 919 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.corelog=(yyvsp[0].intval); }
-#line 6082 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6084 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 202:
 #line 920 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("int value expected"); }
-#line 6088 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6090 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 203:
 #line 921 "core/cfg.y" /* yacc.c:1646  */
     { sip_warning=(yyvsp[0].intval); }
-#line 6094 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6096 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 204:
 #line 922 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6100 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6102 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 205:
@@ -6104,13 +6106,13 @@ yyreduce:
     { version_table.s=(yyvsp[0].strval);
 			version_table.len=strlen(version_table.s);
 	}
-#line 6108 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6110 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 206:
 #line 926 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 6114 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6116 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 207:
@@ -6122,7 +6124,7 @@ yyreduce:
 		else if (user==0)
 			user=(yyvsp[0].strval);
 	}
-#line 6126 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6128 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 208:
@@ -6134,97 +6136,97 @@ yyreduce:
 		else if (user==0)
 			user=(yyvsp[0].strval);
 	}
-#line 6138 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6140 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 209:
 #line 941 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 6144 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6146 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 210:
 #line 942 "core/cfg.y" /* yacc.c:1646  */
     { group=(yyvsp[0].strval); }
-#line 6150 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6152 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 211:
 #line 943 "core/cfg.y" /* yacc.c:1646  */
     { group=(yyvsp[0].strval); }
-#line 6156 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6158 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 212:
 #line 944 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 6162 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6164 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 213:
 #line 945 "core/cfg.y" /* yacc.c:1646  */
     { chroot_dir=(yyvsp[0].strval); }
-#line 6168 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6170 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 214:
 #line 946 "core/cfg.y" /* yacc.c:1646  */
     { chroot_dir=(yyvsp[0].strval); }
-#line 6174 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6176 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 215:
 #line 947 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 6180 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6182 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 216:
 #line 948 "core/cfg.y" /* yacc.c:1646  */
     { working_dir=(yyvsp[0].strval); }
-#line 6186 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6188 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 217:
 #line 949 "core/cfg.y" /* yacc.c:1646  */
     { working_dir=(yyvsp[0].strval); }
-#line 6192 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6194 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 218:
 #line 950 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 6198 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6200 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 219:
 #line 951 "core/cfg.y" /* yacc.c:1646  */
     { runtime_dir=(yyvsp[0].strval); }
-#line 6204 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6206 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 220:
 #line 952 "core/cfg.y" /* yacc.c:1646  */
     { runtime_dir=(yyvsp[0].strval); }
-#line 6210 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6212 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 221:
 #line 953 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 6216 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6218 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 222:
 #line 954 "core/cfg.y" /* yacc.c:1646  */
     { mhomed=(yyvsp[0].intval); }
-#line 6222 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6224 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 223:
 #line 955 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6228 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6230 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 224:
@@ -6236,13 +6238,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6240 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6242 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 225:
 #line 963 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6246 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6248 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 226:
@@ -6254,13 +6256,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6258 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6260 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 227:
 #line 971 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6264 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6266 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 228:
@@ -6272,13 +6274,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6276 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6278 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 229:
 #line 979 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6282 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6284 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 230:
@@ -6290,13 +6292,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6294 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6296 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 231:
 #line 987 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6300 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6302 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 232:
@@ -6308,13 +6310,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6312 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6314 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 233:
 #line 995 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6318 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6320 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 234:
@@ -6329,13 +6331,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6333 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6335 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 235:
 #line 1006 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6339 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6341 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 236:
@@ -6354,7 +6356,7 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6358 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6360 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 237:
@@ -6373,13 +6375,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6377 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6379 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 238:
 #line 1035 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("poll method name expected"); }
-#line 6383 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6385 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 239:
@@ -6391,13 +6393,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6395 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6397 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 240:
 #line 1043 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6401 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6403 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 241:
@@ -6409,13 +6411,13 @@ yyreduce:
 			warn("tls support not compiled in");
 		#endif
 	}
-#line 6413 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6415 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 242:
 #line 1051 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6419 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6421 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 243:
@@ -6427,13 +6429,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6431 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6433 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 244:
 #line 1059 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6437 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6439 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 245:
@@ -6447,13 +6449,13 @@ yyreduce:
 		#endif
 		pkg_free((yyvsp[0].ipaddr));
 	}
-#line 6451 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6453 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 246:
 #line 1069 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("IPv4 address expected"); }
-#line 6457 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6459 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 247:
@@ -6467,13 +6469,13 @@ yyreduce:
 		#endif
 		pkg_free((yyvsp[0].ipaddr));
 	}
-#line 6471 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6473 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 248:
 #line 1079 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("IPv6 address expected"); }
-#line 6477 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6479 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 249:
@@ -6485,13 +6487,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6489 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6491 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 250:
 #line 1087 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6495 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6497 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 251:
@@ -6503,13 +6505,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6507 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6509 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 252:
 #line 1095 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6513 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6515 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 253:
@@ -6521,13 +6523,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6525 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6527 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 254:
 #line 1103 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6531 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6533 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 255:
@@ -6539,13 +6541,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6543 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6545 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 256:
 #line 1111 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6549 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6551 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 257:
@@ -6557,13 +6559,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6561 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6563 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 258:
 #line 1119 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6567 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6569 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 259:
@@ -6575,13 +6577,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6579 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6581 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 260:
 #line 1127 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6585 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6587 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 261:
@@ -6593,13 +6595,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6597 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6599 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 262:
 #line 1135 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6603 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6605 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 263:
@@ -6611,13 +6613,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6615 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6617 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 264:
 #line 1143 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6621 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6623 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 265:
@@ -6629,13 +6631,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6633 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6635 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 266:
 #line 1151 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6639 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6641 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 267:
@@ -6647,13 +6649,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6651 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6653 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 268:
 #line 1159 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6657 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6659 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 269:
@@ -6665,13 +6667,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6669 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6671 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 270:
 #line 1167 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected");}
-#line 6675 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6677 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 271:
@@ -6683,13 +6685,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6687 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6689 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 272:
 #line 1175 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6693 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6695 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 273:
@@ -6701,13 +6703,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6705 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6707 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 274:
 #line 1183 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6711 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6713 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 275:
@@ -6719,13 +6721,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6723 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6725 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 276:
 #line 1191 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6729 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6731 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 277:
@@ -6737,13 +6739,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6741 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6743 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 278:
 #line 1199 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6747 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6749 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 279:
@@ -6755,13 +6757,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6759 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6761 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 280:
 #line 1207 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6765 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6767 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 281:
@@ -6773,13 +6775,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6777 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6779 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 282:
 #line 1215 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6783 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6785 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 283:
@@ -6791,13 +6793,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6795 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6797 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 284:
 #line 1224 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6801 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6803 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 285:
@@ -6813,13 +6815,13 @@ yyreduce:
 			warn("tcp support not compiled in");
 		#endif
 	}
-#line 6817 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6819 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 286:
 #line 1236 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6823 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6825 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 287:
@@ -6831,13 +6833,13 @@ yyreduce:
 			warn("tls support not compiled in");
 		#endif
 	}
-#line 6835 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6837 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 288:
 #line 1244 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6841 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6843 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 289:
@@ -6849,13 +6851,13 @@ yyreduce:
 			warn("tls support not compiled in");
 		#endif
 	}
-#line 6853 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6855 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 290:
 #line 1252 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6859 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6861 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 291:
@@ -6867,13 +6869,13 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 6871 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6873 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 292:
 #line 1260 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("int value expected"); }
-#line 6877 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6879 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 293:
@@ -6885,13 +6887,13 @@ yyreduce:
 			warn("tls support not compiled in");
 		#endif
 	}
-#line 6889 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6891 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 294:
 #line 1268 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 6895 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6897 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 295:
@@ -6903,7 +6905,7 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 6907 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6909 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 296:
@@ -6915,7 +6917,7 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 6919 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6921 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 297:
@@ -6927,7 +6929,7 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 6931 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6933 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 298:
@@ -6939,7 +6941,7 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 6943 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6945 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 299:
@@ -6951,7 +6953,7 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 6955 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6957 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 300:
@@ -6963,13 +6965,13 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 6967 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6969 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 301:
 #line 1311 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6973 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6975 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 302:
@@ -6981,13 +6983,13 @@ yyreduce:
 			warn( "tls-in-core support not compiled in");
 		#endif
 	}
-#line 6985 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6987 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 303:
 #line 1319 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 6991 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 6993 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 304:
@@ -6999,13 +7001,13 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 7003 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7005 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 305:
 #line 1327 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 7009 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7011 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 306:
@@ -7017,13 +7019,13 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 7021 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7023 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 307:
 #line 1335 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 7027 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7029 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 308:
@@ -7035,13 +7037,13 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 7039 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7041 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 309:
 #line 1343 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 7045 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7047 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 310:
@@ -7053,13 +7055,13 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 7057 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7059 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 311:
 #line 1351 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7063 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7065 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 312:
@@ -7071,13 +7073,13 @@ yyreduce:
 			warn("tls-in-core support not compiled in");
 		#endif
 	}
-#line 7075 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7077 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 313:
 #line 1359 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7081 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7083 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 314:
@@ -7089,13 +7091,13 @@ yyreduce:
 			warn("sctp support not compiled in");
 		#endif
 	}
-#line 7093 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7095 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 315:
 #line 1367 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7099 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7101 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 316:
@@ -7107,13 +7109,13 @@ yyreduce:
 			warn("sctp support not compiled in");
 		#endif
 	}
-#line 7111 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7113 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 317:
 #line 1375 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean or number expected"); }
-#line 7117 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7119 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 318:
@@ -7125,25 +7127,25 @@ yyreduce:
 			warn("sctp support not compiled in");
 		#endif
 	}
-#line 7129 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7131 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 319:
 #line 1383 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7135 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7137 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 320:
 #line 1384 "core/cfg.y" /* yacc.c:1646  */
     { server_signature=(yyvsp[0].intval); }
-#line 7141 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7143 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 321:
 #line 1385 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7147 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7149 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 322:
@@ -7151,13 +7153,13 @@ yyreduce:
     { server_hdr.s=(yyvsp[0].strval);
 			server_hdr.len=strlen(server_hdr.s);
 	}
-#line 7155 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7157 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 323:
 #line 1389 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 7161 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7163 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 324:
@@ -7165,25 +7167,25 @@ yyreduce:
     { user_agent_hdr.s=(yyvsp[0].strval);
 			user_agent_hdr.len=strlen(user_agent_hdr.s);
 	}
-#line 7169 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7171 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 325:
 #line 1393 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string value expected"); }
-#line 7175 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7177 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 326:
 #line 1394 "core/cfg.y" /* yacc.c:1646  */
     { reply_to_via=(yyvsp[0].intval); }
-#line 7181 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7183 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 327:
 #line 1395 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7187 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7189 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 328:
@@ -7200,7 +7202,7 @@ yyreduce:
 		}
 		free_socket_id_lst((yyvsp[0].sockid));
 	}
-#line 7204 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7206 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 329:
@@ -7218,14 +7220,14 @@ yyreduce:
 		}
 		free_socket_id_lst((yyvsp[-4].sockid));
 	}
-#line 7222 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7224 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 330:
 #line 1421 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("ip address, interface name or"
 									" hostname expected"); }
-#line 7229 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7231 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 331:
@@ -7241,25 +7243,25 @@ yyreduce:
 		}
 		free_socket_id_lst((yyvsp[0].sockid));
 	}
-#line 7245 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7247 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 332:
 #line 1434 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("hostname expected"); }
-#line 7251 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7253 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 333:
 #line 1435 "core/cfg.y" /* yacc.c:1646  */
     { sr_auto_aliases=(yyvsp[0].intval); }
-#line 7257 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7259 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 334:
 #line 1436 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7263 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7265 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 335:
@@ -7270,13 +7272,13 @@ yyreduce:
 			default_global_address.len=strlen((yyvsp[0].strval));
 		}
 	}
-#line 7274 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7276 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 336:
 #line 1443 "core/cfg.y" /* yacc.c:1646  */
     {yyerror("ip address or hostname expected"); }
-#line 7280 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7282 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 337:
@@ -7291,37 +7293,37 @@ yyreduce:
 			memcpy(default_global_port.s, tmp, default_global_port.len);
 		};
 	}
-#line 7295 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7297 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 338:
 #line 1454 "core/cfg.y" /* yacc.c:1646  */
     {yyerror("ip address or hostname expected"); }
-#line 7301 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7303 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 339:
 #line 1455 "core/cfg.y" /* yacc.c:1646  */
     { disable_core_dump=(yyvsp[0].intval); }
-#line 7307 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7309 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 340:
 #line 1456 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7313 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7315 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 341:
 #line 1457 "core/cfg.y" /* yacc.c:1646  */
     { open_files_limit=(yyvsp[0].intval); }
-#line 7319 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7321 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 342:
 #line 1458 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7325 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7327 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 343:
@@ -7333,13 +7335,13 @@ yyreduce:
 		else if (shm_mem_size == 0 || shm_mem_size == SHM_MEM_POOL_SIZE)
 			shm_mem_size=(yyvsp[0].intval) * 1024 * 1024;
 	}
-#line 7337 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7339 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 344:
 #line 1466 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7343 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7345 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 345:
@@ -7351,109 +7353,109 @@ yyreduce:
 		else
 			shm_force_alloc=(yyvsp[0].intval);
 	}
-#line 7355 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7357 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 346:
 #line 1474 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7361 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7363 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 347:
 #line 1475 "core/cfg.y" /* yacc.c:1646  */
     { mlock_pages=(yyvsp[0].intval); }
-#line 7367 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7369 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 348:
 #line 1476 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7373 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7375 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 349:
 #line 1477 "core/cfg.y" /* yacc.c:1646  */
     { real_time=(yyvsp[0].intval); }
-#line 7379 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7381 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 350:
 #line 1478 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7385 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7387 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 351:
 #line 1479 "core/cfg.y" /* yacc.c:1646  */
     { rt_prio=(yyvsp[0].intval); }
-#line 7391 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7393 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 352:
 #line 1480 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7397 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7399 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 353:
 #line 1481 "core/cfg.y" /* yacc.c:1646  */
     { rt_policy=(yyvsp[0].intval); }
-#line 7403 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7405 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 354:
 #line 1482 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7409 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7411 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 355:
 #line 1483 "core/cfg.y" /* yacc.c:1646  */
     { rt_timer1_prio=(yyvsp[0].intval); }
-#line 7415 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7417 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 356:
 #line 1484 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7421 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7423 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 357:
 #line 1485 "core/cfg.y" /* yacc.c:1646  */
     { rt_timer1_policy=(yyvsp[0].intval); }
-#line 7427 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7429 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 358:
 #line 1486 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7433 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7435 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 359:
 #line 1487 "core/cfg.y" /* yacc.c:1646  */
     { rt_timer2_prio=(yyvsp[0].intval); }
-#line 7439 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7441 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 360:
 #line 1488 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7445 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7447 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 361:
 #line 1489 "core/cfg.y" /* yacc.c:1646  */
     { rt_timer2_policy=(yyvsp[0].intval); }
-#line 7451 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7453 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 362:
 #line 1490 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7457 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7459 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 363:
@@ -7465,13 +7467,13 @@ yyreduce:
 			warn("no multicast support compiled in");
 		#endif
 	}
-#line 7469 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7471 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 364:
 #line 1498 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7475 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7477 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 365:
@@ -7483,13 +7485,13 @@ yyreduce:
 			warn("no multicast support compiled in");
 		#endif
 	}
-#line 7487 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7489 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 366:
 #line 1506 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7493 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7495 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 367:
@@ -7501,7 +7503,7 @@ yyreduce:
 			warn("no multicast support compiled in");
 		#endif
 	}
-#line 7505 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7507 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 368:
@@ -7513,19 +7515,19 @@ yyreduce:
 			warn("no multicast support compiled in");
 		#endif
 	}
-#line 7517 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7519 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 369:
 #line 1521 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string expected"); }
-#line 7523 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7525 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 370:
 #line 1522 "core/cfg.y" /* yacc.c:1646  */
     { tos=(yyvsp[0].intval); }
-#line 7529 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7531 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 371:
@@ -7557,265 +7559,265 @@ yyreduce:
 				"\n");
 		}
 	}
-#line 7561 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7563 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 372:
 #line 1550 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7567 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7569 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 373:
 #line 1551 "core/cfg.y" /* yacc.c:1646  */
     { pmtu_discovery=(yyvsp[0].intval); }
-#line 7573 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7575 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 374:
 #line 1552 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7579 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7581 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 375:
 #line 1553 "core/cfg.y" /* yacc.c:1646  */
     { ser_kill_timeout=(yyvsp[0].intval); }
-#line 7585 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7587 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 376:
 #line 1554 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7591 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7593 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 377:
 #line 1555 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.max_while_loops=(yyvsp[0].intval); }
-#line 7597 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7599 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 378:
 #line 1556 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7603 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7605 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 379:
 #line 1557 "core/cfg.y" /* yacc.c:1646  */
     { pv_set_buffer_size((yyvsp[0].intval)); }
-#line 7609 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7611 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 380:
 #line 1558 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7615 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7617 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 381:
 #line 1559 "core/cfg.y" /* yacc.c:1646  */
     { pv_set_buffer_slots((yyvsp[0].intval)); }
-#line 7621 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7623 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 382:
 #line 1560 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7627 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7629 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 383:
 #line 1561 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.pv_cache_limit=(yyvsp[0].intval); }
-#line 7633 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7635 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 384:
 #line 1562 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7639 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7641 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 385:
 #line 1563 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.pv_cache_action=(yyvsp[0].intval); }
-#line 7645 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7647 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 386:
 #line 1564 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7651 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7653 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 387:
 #line 1565 "core/cfg.y" /* yacc.c:1646  */
     { http_reply_parse=(yyvsp[0].intval); }
-#line 7657 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7659 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 388:
 #line 1566 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7663 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7665 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 389:
 #line 1567 "core/cfg.y" /* yacc.c:1646  */
     { ksr_verbose_startup=(yyvsp[0].intval); }
-#line 7669 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7671 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 390:
 #line 1568 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7675 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7677 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 391:
 #line 1569 "core/cfg.y" /* yacc.c:1646  */
     { server_id=(yyvsp[0].intval); }
-#line 7681 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7683 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 392:
 #line 1570 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number  expected"); }
-#line 7687 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7689 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 393:
 #line 1571 "core/cfg.y" /* yacc.c:1646  */
     { set_max_recursive_level((yyvsp[0].intval)); }
-#line 7693 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7695 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 394:
 #line 1572 "core/cfg.y" /* yacc.c:1646  */
     { sr_dst_max_branches = (yyvsp[0].intval); }
-#line 7699 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7701 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 395:
 #line 1573 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.latency_log=(yyvsp[0].intval); }
-#line 7705 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7707 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 396:
 #line 1574 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number  expected"); }
-#line 7711 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7713 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 397:
 #line 1575 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.latency_cfg_log=(yyvsp[0].intval); }
-#line 7717 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7719 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 398:
 #line 1576 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number  expected"); }
-#line 7723 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7725 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 399:
 #line 1577 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.latency_limit_db=(yyvsp[0].intval); }
-#line 7729 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7731 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 400:
 #line 1578 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number  expected"); }
-#line 7735 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7737 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 401:
 #line 1579 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.latency_limit_action=(yyvsp[0].intval); }
-#line 7741 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7743 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 402:
 #line 1580 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number  expected"); }
-#line 7747 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7749 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 403:
 #line 1581 "core/cfg.y" /* yacc.c:1646  */
     { sr_msg_time=(yyvsp[0].intval); }
-#line 7753 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7755 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 404:
 #line 1582 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number  expected"); }
-#line 7759 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7761 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 405:
 #line 1583 "core/cfg.y" /* yacc.c:1646  */
     { onsend_route_reply=(yyvsp[0].intval); }
-#line 7765 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7767 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 406:
 #line 1584 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("int value expected"); }
-#line 7771 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7773 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 407:
 #line 1585 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.udp_mtu=(yyvsp[0].intval); }
-#line 7777 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7779 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 408:
 #line 1586 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7783 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7785 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 409:
 #line 1588 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.force_rport=(yyvsp[0].intval); fix_global_req_flags(0, 0); }
-#line 7789 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7791 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 410:
 #line 1589 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("boolean value expected"); }
-#line 7795 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7797 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 411:
 #line 1591 "core/cfg.y" /* yacc.c:1646  */
     { default_core_cfg.udp_mtu_try_proto=(yyvsp[0].intval); fix_global_req_flags(0, 0); }
-#line 7801 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7803 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 412:
 #line 1593 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("TCP, TLS, SCTP or UDP expected"); }
-#line 7807 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7809 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 413:
 #line 1594 "core/cfg.y" /* yacc.c:1646  */
     { IF_RAW_SOCKS(default_core_cfg.udp4_raw=(yyvsp[0].intval)); }
-#line 7813 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7815 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 414:
 #line 1595 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7819 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7821 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 415:
@@ -7823,13 +7825,13 @@ yyreduce:
     {
 		IF_RAW_SOCKS(default_core_cfg.udp4_raw_mtu=(yyvsp[0].intval));
 	}
-#line 7827 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7829 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 416:
 #line 1599 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7833 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7835 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 417:
@@ -7837,31 +7839,31 @@ yyreduce:
     {
 		IF_RAW_SOCKS(default_core_cfg.udp4_raw_ttl=(yyvsp[0].intval));
 	}
-#line 7841 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7843 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 418:
 #line 1603 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("number expected"); }
-#line 7847 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7849 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 420:
 #line 1605 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("unknown config variable"); }
-#line 7853 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7855 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 422:
 #line 1609 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.strval)="default" ; }
-#line 7859 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7861 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 424:
 #line 1613 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.strval)="default" ; }
-#line 7865 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7867 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 425:
@@ -7871,7 +7873,7 @@ yyreduce:
 				yy_number_str);
 		YYERROR;
 	}
-#line 7875 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7877 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 426:
@@ -7881,7 +7883,7 @@ yyreduce:
 			yyerror("variable cannot be declared");
 		}
 	}
-#line 7885 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7887 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 427:
@@ -7891,7 +7893,7 @@ yyreduce:
 			yyerror("variable cannot be declared");
 		}
 	}
-#line 7895 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7897 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 428:
@@ -7901,7 +7903,7 @@ yyreduce:
 			yyerror("variable cannot be declared");
 		}
 	}
-#line 7905 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7907 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 429:
@@ -7911,7 +7913,7 @@ yyreduce:
 			yyerror("variable cannot be declared");
 		}
 	}
-#line 7915 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7917 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 430:
@@ -7919,7 +7921,7 @@ yyreduce:
     {
 		yyerror("number or string expected");
 	}
-#line 7923 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7925 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 431:
@@ -7929,7 +7931,7 @@ yyreduce:
 			yyerror("variable cannot be added to the group instance");
 		}
 	}
-#line 7933 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7935 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 432:
@@ -7939,7 +7941,7 @@ yyreduce:
 			yyerror("variable cannot be added to the group instance");
 		}
 	}
-#line 7943 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7945 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 433:
@@ -7950,13 +7952,13 @@ yyreduce:
 				yyerror("failed to load module");
 			}
 	}
-#line 7954 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7956 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 434:
 #line 1664 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string expected"); }
-#line 7960 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7962 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 435:
@@ -7971,13 +7973,13 @@ yyreduce:
 			printf("loading modules under command line path: %s\n", mods_dir);
 		}
 	}
-#line 7975 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7977 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 436:
 #line 1675 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string expected"); }
-#line 7981 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7983 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 437:
@@ -7992,13 +7994,13 @@ yyreduce:
 			printf("loading modules under command line path: %s\n", mods_dir);
 		}
 	}
-#line 7996 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 7998 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 438:
 #line 1686 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string expected"); }
-#line 8002 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8004 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 439:
@@ -8014,7 +8016,7 @@ yyreduce:
 			 yyerror("Can't set module parameter");
 		}
 	}
-#line 8018 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8020 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 440:
@@ -8030,13 +8032,13 @@ yyreduce:
 			 yyerror("Can't set module parameter");
 		}
 	}
-#line 8034 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8036 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 441:
 #line 1709 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("Invalid arguments"); }
-#line 8040 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8042 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 442:
@@ -8047,13 +8049,13 @@ yyreduce:
 			YYABORT;
 		}
 	}
-#line 8051 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8053 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 443:
 #line 1716 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string expected"); }
-#line 8057 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8059 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 444:
@@ -8064,25 +8066,25 @@ yyreduce:
 			YYABORT;
 		}
 	}
-#line 8068 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8070 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 445:
 #line 1723 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("string expected"); }
-#line 8074 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8076 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 446:
 #line 1727 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.ipaddr)=(yyvsp[0].ipaddr); }
-#line 8080 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8082 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 447:
 #line 1728 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.ipaddr)=(yyvsp[0].ipaddr); }
-#line 8086 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8088 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 448:
@@ -8114,7 +8116,7 @@ yyreduce:
 			}
 		}
 	}
-#line 8118 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8120 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 449:
@@ -8132,19 +8134,19 @@ yyreduce:
 			}
 		}
 	}
-#line 8136 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8138 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 450:
 #line 1775 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.ipaddr)=(yyvsp[0].ipaddr); }
-#line 8142 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8144 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 451:
 #line 1776 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.ipaddr)=(yyvsp[-1].ipaddr); }
-#line 8148 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8150 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 452:
@@ -8160,31 +8162,31 @@ yyreduce:
 					}
 					routename = tmp;
 						}
-#line 8164 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8166 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 453:
 #line 1791 "core/cfg.y" /* yacc.c:1646  */
     { routename = (yyvsp[0].strval); (yyval.strval)=(yyvsp[0].strval); }
-#line 8170 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8172 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 454:
 #line 1792 "core/cfg.y" /* yacc.c:1646  */
     { routename = (yyvsp[0].strval); (yyval.strval)=(yyvsp[0].strval); }
-#line 8176 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8178 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 455:
 #line 1796 "core/cfg.y" /* yacc.c:1646  */
     { routename=NULL; }
-#line 8182 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8184 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 456:
 #line 1797 "core/cfg.y" /* yacc.c:1646  */
     { routename=NULL; }
-#line 8188 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8190 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 457:
@@ -8198,7 +8200,7 @@ yyreduce:
 	#endif /* SHM_MEM */
 		push((yyvsp[-1].action), &main_rt.rlist[DEFAULT_RT]);
 	}
-#line 8202 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8204 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 458:
@@ -8221,19 +8223,19 @@ yyreduce:
 		}
 		push((yyvsp[-1].action), &main_rt.rlist[i_tmp]);
 	}
-#line 8225 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8227 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 459:
 #line 1828 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("invalid  route  statement"); }
-#line 8231 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8233 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 460:
 #line 1829 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("invalid  request_route  statement"); }
-#line 8237 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8239 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 461:
@@ -8247,7 +8249,7 @@ yyreduce:
 	#endif /* SHM_MEM */
 		push((yyvsp[-1].action), &failure_rt.rlist[DEFAULT_RT]);
 	}
-#line 8251 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8253 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 462:
@@ -8270,31 +8272,31 @@ yyreduce:
 		}
 		push((yyvsp[-1].action), &failure_rt.rlist[i_tmp]);
 	}
-#line 8274 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8276 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 463:
 #line 1859 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("invalid failure_route statement"); }
-#line 8280 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8282 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 464:
 #line 1863 "core/cfg.y" /* yacc.c:1646  */
     { routename=NULL; }
-#line 8286 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8288 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 465:
 #line 1864 "core/cfg.y" /* yacc.c:1646  */
     { routename=NULL; }
-#line 8292 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8294 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 466:
 #line 1869 "core/cfg.y" /* yacc.c:1646  */
     {rt=CORE_ONREPLY_ROUTE;}
-#line 8298 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8300 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 467:
@@ -8308,25 +8310,25 @@ yyreduce:
 	#endif /* SHM_MEM */
 		push((yyvsp[-1].action), &onreply_rt.rlist[DEFAULT_RT]);
 	}
-#line 8312 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8314 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 468:
 #line 1878 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("invalid onreply_route statement"); }
-#line 8318 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8320 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 469:
 #line 1879 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("invalid onreply_route statement"); }
-#line 8324 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8326 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 470:
 #line 1881 "core/cfg.y" /* yacc.c:1646  */
     {rt=(*(yyvsp[-1].strval)=='0' && (yyvsp[-1].strval)[1]==0)?CORE_ONREPLY_ROUTE:TM_ONREPLY_ROUTE;}
-#line 8330 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8332 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 471:
@@ -8354,7 +8356,7 @@ yyreduce:
 			push((yyvsp[-1].action), &onreply_rt.rlist[i_tmp]);
 		}
 	}
-#line 8358 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8360 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 472:
@@ -8362,7 +8364,7 @@ yyreduce:
     {
 		yyerror("invalid onreply_route statement");
 	}
-#line 8366 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8368 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 473:
@@ -8376,7 +8378,7 @@ yyreduce:
 	#endif /* SHM_MEM */
 		push((yyvsp[-1].action), &branch_rt.rlist[DEFAULT_RT]);
 	}
-#line 8380 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8382 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 474:
@@ -8399,13 +8401,13 @@ yyreduce:
 		}
 		push((yyvsp[-1].action), &branch_rt.rlist[i_tmp]);
 	}
-#line 8403 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8405 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 475:
 #line 1937 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("invalid branch_route statement"); }
-#line 8409 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8411 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 476:
@@ -8419,7 +8421,7 @@ yyreduce:
 	#endif /* SHM_MEM */
 		push((yyvsp[-1].action), &onsend_rt.rlist[DEFAULT_RT]);
 	}
-#line 8423 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8425 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 477:
@@ -8442,13 +8444,13 @@ yyreduce:
 		}
 		push((yyvsp[-1].action), &onsend_rt.rlist[i_tmp]);
 	}
-#line 8446 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8448 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 478:
 #line 1966 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("invalid onsend_route statement"); }
-#line 8452 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8454 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 479:
@@ -8471,379 +8473,379 @@ yyreduce:
 		}
 		push((yyvsp[-1].action), &event_rt.rlist[i_tmp]);
 	}
-#line 8475 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8477 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 480:
 #line 1987 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("invalid event_route statement"); }
-#line 8481 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8483 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 481:
 #line 1990 "core/cfg.y" /* yacc.c:1646  */
     { if(pp_subst_add((yyvsp[0].strval))<0) YYERROR; }
-#line 8487 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8489 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 482:
 #line 1991 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("invalid subst preprocess statement"); }
-#line 8493 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8495 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 483:
 #line 1992 "core/cfg.y" /* yacc.c:1646  */
     { if(pp_substdef_add((yyvsp[0].strval), 0)<0) YYERROR; }
-#line 8499 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8501 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 484:
 #line 1993 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("invalid substdef preprocess statement"); }
-#line 8505 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8507 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 485:
 #line 1994 "core/cfg.y" /* yacc.c:1646  */
     { if(pp_substdef_add((yyvsp[0].strval), 1)<0) YYERROR; }
-#line 8511 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8513 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 486:
 #line 1995 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("invalid substdefs preprocess statement"); }
-#line 8517 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8519 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 487:
 #line 2017 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=EQUAL_OP; }
-#line 8523 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8525 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 488:
 #line 2018 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=DIFF_OP; }
-#line 8529 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8531 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 489:
 #line 2019 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=EQUAL_OP; }
-#line 8535 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8537 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 490:
 #line 2020 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=DIFF_OP; }
-#line 8541 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8543 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 491:
 #line 2023 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=GT_OP; }
-#line 8547 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8549 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 492:
 #line 2024 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=LT_OP; }
-#line 8553 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8555 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 493:
 #line 2025 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=GTE_OP; }
-#line 8559 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8561 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 494:
 #line 2026 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=LTE_OP; }
-#line 8565 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8567 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 495:
 #line 2029 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=(yyvsp[0].intval); }
-#line 8571 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8573 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 496:
 #line 2030 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=MATCH_OP; }
-#line 8577 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8579 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 497:
 #line 2036 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=RVE_EQ_OP; }
-#line 8583 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8585 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 498:
 #line 2037 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=RVE_DIFF_OP; }
-#line 8589 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8591 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 499:
 #line 2038 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=RVE_IEQ_OP; }
-#line 8595 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8597 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 500:
 #line 2039 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=RVE_IDIFF_OP; }
-#line 8601 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8603 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 501:
 #line 2040 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=RVE_STREQ_OP; }
-#line 8607 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8609 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 502:
 #line 2041 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=RVE_STRDIFF_OP; }
-#line 8613 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8615 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 503:
 #line 2042 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=RVE_MATCH_OP; }
-#line 8619 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8621 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 504:
 #line 2045 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=RVE_GT_OP; }
-#line 8625 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8627 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 505:
 #line 2046 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=RVE_LT_OP; }
-#line 8631 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8633 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 506:
 #line 2047 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=RVE_GTE_OP; }
-#line 8637 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8639 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 507:
 #line 2048 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=RVE_LTE_OP; }
-#line 8643 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8645 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 508:
 #line 2055 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=URI_O;}
-#line 8649 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8651 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 509:
 #line 2056 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=FROM_URI_O;}
-#line 8655 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8657 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 510:
 #line 2057 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.intval)=TO_URI_O;}
-#line 8661 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8663 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 511:
 #line 2064 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=SNDPORT_O; }
-#line 8667 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8669 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 512:
 #line 2065 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=TOPORT_O; }
-#line 8673 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8675 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 513:
 #line 2066 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=SNDAF_O; }
-#line 8679 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8681 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 514:
 #line 2070 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=SRCPORT_O; }
-#line 8685 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8687 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 515:
 #line 2071 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=DSTPORT_O; }
-#line 8691 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8693 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 516:
 #line 2072 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=AF_O; }
-#line 8697 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8699 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 517:
 #line 2073 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=MSGLEN_O; }
-#line 8703 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8705 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 519:
 #line 2079 "core/cfg.y" /* yacc.c:1646  */
     { onsend_check("snd_ip"); (yyval.intval)=SNDIP_O; }
-#line 8709 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8711 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 520:
 #line 2080 "core/cfg.y" /* yacc.c:1646  */
     { onsend_check("to_ip");  (yyval.intval)=TOIP_O; }
-#line 8715 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8717 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 521:
 #line 2083 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=SRCIP_O; }
-#line 8721 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8723 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 522:
 #line 2084 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=DSTIP_O; }
-#line 8727 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8729 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 524:
 #line 2092 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.expr)= mk_elem((yyvsp[-1].intval), METHOD_O, 0, RVE_ST, (yyvsp[0].rv_expr));}
-#line 8733 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8735 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 525:
 #line 2094 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.expr) = mk_elem((yyvsp[-1].intval), METHOD_O, 0, STRING_ST,(yyvsp[0].strval)); }
-#line 8739 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8741 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 526:
 #line 2095 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror("string expected"); }
-#line 8745 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8747 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 527:
 #line 2097 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror("invalid operator,== , !=, or =~ expected"); }
-#line 8751 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8753 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 528:
 #line 2099 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.expr) = mk_elem((yyvsp[-1].intval), (yyvsp[-2].intval), 0, RVE_ST, (yyvsp[0].rv_expr)); }
-#line 8757 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8759 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 529:
 #line 2101 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.expr)=mk_elem((yyvsp[-1].intval), (yyvsp[-2].intval), 0, MYSELF_ST, 0); }
-#line 8763 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8765 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 530:
 #line 2103 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror("string or MYSELF expected"); }
-#line 8769 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8771 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 531:
 #line 2105 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror("invalid operator, == , != or =~ expected"); }
-#line 8775 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8777 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 532:
 #line 2106 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=mk_elem((yyvsp[-1].intval), (yyvsp[-2].intval), 0, RVE_ST, (yyvsp[0].rv_expr) ); }
-#line 8781 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8783 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 533:
 #line 2108 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=mk_elem((yyvsp[-1].intval), (yyvsp[-2].intval), 0, RVE_ST, (yyvsp[0].rv_expr) ); }
-#line 8787 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8789 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 534:
 #line 2109 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror("number expected"); }
-#line 8793 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8795 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 535:
 #line 2110 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror("number expected"); }
-#line 8799 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8801 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 536:
 #line 2111 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror("==, !=, <,>, >= or <=  expected"); }
-#line 8805 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8807 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 537:
 #line 2113 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=mk_elem((yyvsp[-1].intval), PROTO_O, 0, NUMBER_ST, (void*)(yyvsp[0].intval) ); }
-#line 8811 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8813 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 538:
 #line 2115 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=mk_elem((yyvsp[-1].intval), PROTO_O, 0, RVE_ST, (yyvsp[0].rv_expr) ); }
-#line 8817 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8819 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 539:
 #line 2117 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror("protocol expected (udp, tcp, tls, sctp, ws, or wss)"); }
-#line 8823 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8825 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 540:
 #line 2119 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=mk_elem((yyvsp[-1].intval), SNDPROTO_O, 0, NUMBER_ST, (void*)(yyvsp[0].intval) ); }
-#line 8829 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8831 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 541:
 #line 2121 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=mk_elem((yyvsp[-1].intval), SNDPROTO_O, 0, RVE_ST, (yyvsp[0].rv_expr) ); }
-#line 8835 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8837 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 542:
 #line 2123 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror("protocol expected (udp, tcp, tls, sctp, ws, or wss)"); }
-#line 8841 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8843 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 543:
 #line 2124 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=mk_elem((yyvsp[-1].intval), (yyvsp[-2].intval), 0, NET_ST, (yyvsp[0].ipnet)); }
-#line 8847 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8849 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 544:
@@ -8884,61 +8886,61 @@ yyreduce:
 				(yyval.expr)=mk_elem((yyvsp[-1].intval), (yyvsp[-2].intval), 0, RVE_ST, (yyvsp[0].rv_expr));
 			}
 		}
-#line 8888 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8890 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 545:
 #line 2162 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=mk_elem((yyvsp[-1].intval), (yyvsp[-2].intval), 0, STRING_ST, (yyvsp[0].strval)); }
-#line 8894 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8896 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 546:
 #line 2164 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=mk_elem((yyvsp[-1].intval), (yyvsp[-2].intval), 0, MYSELF_ST, 0); }
-#line 8900 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8902 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 547:
 #line 2166 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror( "ip address or hostname expected" ); }
-#line 8906 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8908 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 548:
 #line 2168 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror("invalid operator, ==, != or =~ expected");}
-#line 8912 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8914 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 549:
 #line 2171 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=mk_elem((yyvsp[-1].intval), (yyvsp[0].intval), 0, MYSELF_ST, 0); }
-#line 8918 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8920 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 550:
 #line 2173 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=mk_elem((yyvsp[-1].intval), (yyvsp[0].intval), 0, MYSELF_ST, 0); }
-#line 8924 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8926 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 551:
 #line 2175 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror("URI, SRCIP or DSTIP expected"); }
-#line 8930 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8932 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 552:
 #line 2176 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.expr)=0; yyerror ("invalid operator, == or != expected"); }
-#line 8936 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8938 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 553:
 #line 2180 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.ipnet)=mk_new_net((yyvsp[-2].ipaddr), (yyvsp[0].ipaddr)); }
-#line 8942 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8944 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 554:
@@ -8954,25 +8956,25 @@ yyreduce:
 		*/
 		}
 	}
-#line 8958 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8960 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 555:
 #line 2192 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.ipnet)=mk_new_net_bitlen((yyvsp[0].ipaddr), (yyvsp[0].ipaddr)->len*8); }
-#line 8964 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8966 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 556:
 #line 2193 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.ipnet)=0; yyerror("netmask (eg:255.0.0.0 or 8) expected"); }
-#line 8970 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8972 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 557:
 #line 2197 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.strval)=(yyvsp[0].strval); }
-#line 8976 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8978 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 558:
@@ -8993,7 +8995,7 @@ yyreduce:
 		}
 		if ((yyvsp[0].strval)) pkg_free((yyvsp[0].strval));
 	}
-#line 8997 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 8999 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 559:
@@ -9014,19 +9016,19 @@ yyreduce:
 		}
 		if ((yyvsp[0].strval)) pkg_free((yyvsp[0].strval));
 	}
-#line 9018 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9020 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 560:
 #line 2230 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.strval)=0; pkg_free((yyvsp[-2].strval)); yyerror("invalid hostname"); }
-#line 9024 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9026 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 561:
 #line 2231 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.strval)=0; pkg_free((yyvsp[-2].strval)); yyerror("invalid hostname"); }
-#line 9030 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9032 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 564:
@@ -9037,13 +9039,13 @@ yyreduce:
 			if ((yyval.strval))
 				strcpy((yyval.strval), yy_number_str);
 		}
-#line 9041 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9043 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 565:
 #line 2245 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.strval)=(yyvsp[0].strval); }
-#line 9047 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9049 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 566:
@@ -9064,7 +9066,7 @@ yyreduce:
 		}
 		if ((yyvsp[0].strval)) pkg_free((yyvsp[0].strval));
 	}
-#line 9068 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9070 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 567:
@@ -9085,21 +9087,21 @@ yyreduce:
 		}
 		if ((yyvsp[0].strval)) pkg_free((yyvsp[0].strval));
 	}
-#line 9089 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9091 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 568:
 #line 2278 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.strval)=0; pkg_free((yyvsp[-2].strval));
 								yyerror("invalid host or interface name"); }
-#line 9096 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9098 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 569:
 #line 2280 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.strval)=0; pkg_free((yyvsp[-2].strval));
 								yyerror("invalid host or interface name"); }
-#line 9103 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9105 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 570:
@@ -9136,85 +9138,85 @@ yyreduce:
 			(yyval.action)=(yyvsp[0].action);
 		}
 	}
-#line 9140 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9142 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 571:
 #line 2329 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=(yyvsp[0].action); }
-#line 9146 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9148 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 572:
 #line 2330 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=(yyvsp[-1].action); }
-#line 9152 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9154 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 573:
 #line 2333 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=append_action((yyvsp[-1].action), (yyvsp[0].action)); }
-#line 9158 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9160 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 574:
 #line 2334 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=(yyvsp[0].action);}
-#line 9164 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9166 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 575:
 #line 2335 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad command"); }
-#line 9170 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9172 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 576:
 #line 2338 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=(yyvsp[-1].action);}
-#line 9176 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9178 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 577:
 #line 2339 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=(yyvsp[0].action);}
-#line 9182 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9184 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 578:
 #line 2340 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=(yyvsp[0].action);}
-#line 9188 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9190 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 579:
 #line 2341 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=(yyvsp[0].action); }
-#line 9194 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9196 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 580:
 #line 2342 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=(yyvsp[-1].action); }
-#line 9200 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9202 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 581:
 #line 2343 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=(yyvsp[-1].action);}
-#line 9206 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9208 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 582:
 #line 2344 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=0;}
-#line 9212 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9214 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 583:
 #line 2345 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad command: missing ';'?"); }
-#line 9218 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9220 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 584:
@@ -9227,7 +9229,7 @@ yyreduce:
 		}else
 			YYERROR;
 	}
-#line 9231 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9233 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 585:
@@ -9240,7 +9242,7 @@ yyreduce:
 		}else
 			YYERROR;
 	}
-#line 9244 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9246 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 586:
@@ -9260,7 +9262,7 @@ yyreduce:
 			}else
 				(yyval.rv_expr)=(yyvsp[0].rv_expr);
 		}
-#line 9264 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9266 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 587:
@@ -9272,7 +9274,7 @@ yyreduce:
 				YYABORT;
 		}
 	}
-#line 9276 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9278 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 588:
@@ -9284,7 +9286,7 @@ yyreduce:
 				YYABORT;
 		}
 	}
-#line 9288 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9290 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 589:
@@ -9296,7 +9298,7 @@ yyreduce:
 				YYABORT;
 		}
 	}
-#line 9300 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9302 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 590:
@@ -9308,7 +9310,7 @@ yyreduce:
 				YYABORT;
 		}
 	}
-#line 9312 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9314 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 591:
@@ -9318,7 +9320,7 @@ yyreduce:
 				YYABORT;
 		}
 	}
-#line 9322 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9324 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 592:
@@ -9328,37 +9330,37 @@ yyreduce:
 				YYABORT;
 		}
 	}
-#line 9332 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9334 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 593:
 #line 2421 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.case_stms)=0; yyerror("bad case label"); }
-#line 9338 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9340 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 594:
 #line 2422 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.case_stms)=0; yyerror("bad case regex label"); }
-#line 9344 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9346 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 595:
 #line 2423 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.case_stms)=0; yyerror("bad case label"); }
-#line 9350 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9352 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 596:
 #line 2424 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.case_stms)=0; yyerror("bad case regex label"); }
-#line 9356 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9358 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 597:
 #line 2425 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.case_stms)=0; yyerror ("bad case body"); }
-#line 9362 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9364 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 598:
@@ -9372,7 +9374,7 @@ yyreduce:
 				(yyval.case_stms)->append=&((*((yyval.case_stms)->append))->next);
 		}
 	}
-#line 9376 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9378 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 599:
@@ -9382,7 +9384,7 @@ yyreduce:
 		if ((yyvsp[0].case_stms)==0) yyerror ("bad case");
 		else (yyval.case_stms)->append=&((yyval.case_stms)->next);
 	}
-#line 9386 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9388 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 600:
@@ -9412,7 +9414,7 @@ yyreduce:
 			set_cfg_pos((yyval.action));
 		}
 	}
-#line 9416 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9418 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 601:
@@ -9433,19 +9435,19 @@ yyreduce:
 			set_cfg_pos((yyval.action));
 		}
 	}
-#line 9437 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9439 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 602:
 #line 2485 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror ("bad expression in switch(...)"); }
-#line 9443 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9445 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 603:
 #line 2487 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=0; yyerror ("bad switch body"); }
-#line 9449 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9451 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 604:
@@ -9460,7 +9462,7 @@ yyreduce:
 			YYERROR;
 		}
 	}
-#line 9464 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9466 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 605:
@@ -9474,7 +9476,7 @@ yyreduce:
 		sel.params[sel.n].v.s.len = strlen((yyvsp[0].strval));
 		sel.n++;
 	}
-#line 9478 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9480 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 606:
@@ -9491,7 +9493,7 @@ yyreduce:
 		sel.params[sel.n].v.i = (yyvsp[-1].intval);
 		sel.n++;
 	}
-#line 9495 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9497 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 607:
@@ -9509,13 +9511,13 @@ yyreduce:
 		sel.params[sel.n].v.s.len = strlen((yyvsp[-1].strval));
 		sel.n++;
 	}
-#line 9513 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9515 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 610:
 #line 2550 "core/cfg.y" /* yacc.c:1646  */
     { sel.n = 0; sel.f[0] = 0; }
-#line 9519 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9521 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 611:
@@ -9528,67 +9530,67 @@ yyreduce:
 		memcpy(sel_ptr, &sel, sizeof(select_t));
 		(yyval.select) = sel_ptr;
 	}
-#line 9532 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9534 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 612:
 #line 2560 "core/cfg.y" /* yacc.c:1646  */
     { s_attr->type |= AVP_TRACK_FROM; }
-#line 9538 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9540 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 613:
 #line 2561 "core/cfg.y" /* yacc.c:1646  */
     { s_attr->type |= AVP_TRACK_TO; }
-#line 9544 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9546 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 614:
 #line 2562 "core/cfg.y" /* yacc.c:1646  */
     { s_attr->type |= AVP_TRACK_FROM | AVP_CLASS_URI; }
-#line 9550 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9552 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 615:
 #line 2563 "core/cfg.y" /* yacc.c:1646  */
     { s_attr->type |= AVP_TRACK_TO | AVP_CLASS_URI; }
-#line 9556 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9558 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 616:
 #line 2564 "core/cfg.y" /* yacc.c:1646  */
     { s_attr->type |= AVP_TRACK_FROM | AVP_CLASS_USER; }
-#line 9562 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9564 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 617:
 #line 2565 "core/cfg.y" /* yacc.c:1646  */
     { s_attr->type |= AVP_TRACK_TO | AVP_CLASS_USER; }
-#line 9568 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9570 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 618:
 #line 2566 "core/cfg.y" /* yacc.c:1646  */
     { s_attr->type |= AVP_TRACK_FROM | AVP_CLASS_DOMAIN; }
-#line 9574 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9576 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 619:
 #line 2567 "core/cfg.y" /* yacc.c:1646  */
     { s_attr->type |= AVP_TRACK_TO | AVP_CLASS_DOMAIN; }
-#line 9580 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9582 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 620:
 #line 2568 "core/cfg.y" /* yacc.c:1646  */
     { s_attr->type |= AVP_TRACK_ALL | AVP_CLASS_GLOBAL; }
-#line 9586 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9588 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 621:
 #line 2571 "core/cfg.y" /* yacc.c:1646  */
     { s_attr->type |= AVP_NAME_STR; s_attr->name.s.s = (yyvsp[0].strval); s_attr->name.s.len = strlen ((yyvsp[0].strval)); }
-#line 9592 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9594 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 624:
@@ -9598,13 +9600,13 @@ yyreduce:
 		if (!s_attr) { yyerror("No memory left"); YYABORT; }
 		else s_attr->type = 0;
 	}
-#line 9602 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9604 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 625:
 #line 2585 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.attr) = s_attr; }
-#line 9608 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9610 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 626:
@@ -9614,7 +9616,7 @@ yyreduce:
 		s_attr->index = ((yyvsp[-1].intval)<0?-(yyvsp[-1].intval):(yyvsp[-1].intval));
 		(yyval.attr) = s_attr;
 	}
-#line 9618 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9620 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 627:
@@ -9623,7 +9625,7 @@ yyreduce:
 		s_attr->type|= AVP_INDEX_ALL;
 		(yyval.attr) = s_attr;
 	}
-#line 9627 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9629 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 634:
@@ -9640,7 +9642,7 @@ yyreduce:
 			(yyval.attr)=0; /* not an avp, a pvar */
 		pkg_free((yyvsp[0].lval));
 	}
-#line 9644 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9646 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 635:
@@ -9667,7 +9669,7 @@ yyreduce:
 		avp_spec->index = idx;
 		(yyval.attr) = avp_spec;
 	}
-#line 9671 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9673 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 636:
@@ -9681,7 +9683,7 @@ yyreduce:
 			}
 			(yyval.pvar)=pv_spec;
 		}
-#line 9685 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9687 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 637:
@@ -9707,13 +9709,13 @@ yyreduce:
 				DBG("parsed ambiguous avp/pvar \"%.*s\" to %d\n",
 							s_tmp.len, s_tmp.s, lval_tmp->type);
 			}
-#line 9711 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9713 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 638:
 #line 2695 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval) = ASSIGN_T; }
-#line 9717 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9719 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 639:
@@ -9728,7 +9730,7 @@ yyreduce:
 					pkg_free((yyvsp[0].attr)); /* free the avp spec we just copied */
 					(yyval.lval)=lval_tmp;
 				}
-#line 9732 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9734 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 640:
@@ -9747,7 +9749,7 @@ yyreduce:
 					lval_tmp->type=LV_PVAR; lval_tmp->lv.pvs=(yyvsp[0].pvar);
 					(yyval.lval)=lval_tmp;
 				}
-#line 9751 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9753 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 641:
@@ -9762,32 +9764,32 @@ yyreduce:
 					}
 					(yyval.lval)=(yyvsp[0].lval);
 				}
-#line 9766 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9768 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 642:
 #line 2735 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve_rval(RV_INT, (void*)(yyvsp[0].intval)); }
-#line 9772 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9774 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 643:
 #line 2736 "core/cfg.y" /* yacc.c:1646  */
     {	s_tmp.s=(yyvsp[0].strval); s_tmp.len=strlen((yyvsp[0].strval));
 							(yyval.rv_expr)=mk_rve_rval(RV_STR, &s_tmp); }
-#line 9779 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9781 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 644:
 #line 2738 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve_rval(RV_AVP, (yyvsp[0].attr)); pkg_free((yyvsp[0].attr)); }
-#line 9785 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9787 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 645:
 #line 2739 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve_rval(RV_PVAR, (yyvsp[0].pvar)); }
-#line 9791 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9793 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 646:
@@ -9806,67 +9808,67 @@ yyreduce:
 							}
 							pkg_free((yyvsp[0].lval)); /* not needed anymore */
 						}
-#line 9810 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9812 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 647:
 #line 2754 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve_rval(RV_SEL, (yyvsp[0].select)); pkg_free((yyvsp[0].select)); }
-#line 9816 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9818 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 648:
 #line 2755 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve_rval(RV_ACTION_ST, (yyvsp[0].action)); }
-#line 9822 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9824 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 649:
 #line 2756 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=mk_rve_rval(RV_BEXPR, (yyvsp[0].expr)); }
-#line 9828 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9830 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 650:
 #line 2757 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve_rval(RV_ACTION_ST, (yyvsp[-1].action)); }
-#line 9834 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9836 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 651:
 #line 2758 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad command block"); }
-#line 9840 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9842 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 652:
 #line 2759 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve_rval(RV_ACTION_ST, (yyvsp[-1].action)); }
-#line 9846 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9848 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 653:
 #line 2760 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 9852 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9854 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 654:
 #line 2764 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=RVE_LNOT_OP; }
-#line 9858 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9860 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 655:
 #line 2765 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=RVE_BNOT_OP; }
-#line 9864 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9866 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 656:
 #line 2766 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval)=RVE_UMINUS_OP; }
-#line 9870 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9872 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 657:
@@ -9877,91 +9879,91 @@ yyreduce:
 											YYERROR;
 										}
 									}
-#line 9881 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9883 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 658:
 #line 2785 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve1((yyvsp[-1].intval), (yyvsp[0].rv_expr)); }
-#line 9887 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9889 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 659:
 #line 2786 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve1(RVE_INT_OP, (yyvsp[0].rv_expr)); }
-#line 9893 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9895 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 660:
 #line 2787 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve1(RVE_STR_OP, (yyvsp[0].rv_expr)); }
-#line 9899 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9901 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 661:
 #line 2788 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve2(RVE_PLUS_OP, (yyvsp[-2].rv_expr), (yyvsp[0].rv_expr)); }
-#line 9905 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9907 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 662:
 #line 2789 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve2(RVE_MINUS_OP, (yyvsp[-2].rv_expr), (yyvsp[0].rv_expr)); }
-#line 9911 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9913 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 663:
 #line 2790 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve2(RVE_MUL_OP, (yyvsp[-2].rv_expr), (yyvsp[0].rv_expr)); }
-#line 9917 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9919 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 664:
 #line 2791 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve2(RVE_DIV_OP, (yyvsp[-2].rv_expr), (yyvsp[0].rv_expr)); }
-#line 9923 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9925 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 665:
 #line 2792 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve2(RVE_MOD_OP, (yyvsp[-2].rv_expr), (yyvsp[0].rv_expr)); }
-#line 9929 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9931 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 666:
 #line 2793 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve2(RVE_BOR_OP, (yyvsp[-2].rv_expr),  (yyvsp[0].rv_expr)); }
-#line 9935 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9937 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 667:
 #line 2794 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve2(RVE_BAND_OP, (yyvsp[-2].rv_expr),  (yyvsp[0].rv_expr));}
-#line 9941 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9943 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 668:
 #line 2795 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve2(RVE_BXOR_OP, (yyvsp[-2].rv_expr),  (yyvsp[0].rv_expr));}
-#line 9947 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9949 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 669:
 #line 2796 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve2(RVE_BLSHIFT_OP, (yyvsp[-2].rv_expr),  (yyvsp[0].rv_expr));}
-#line 9953 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9955 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 670:
 #line 2797 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve2(RVE_BRSHIFT_OP, (yyvsp[-2].rv_expr),  (yyvsp[0].rv_expr));}
-#line 9959 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9961 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 671:
 #line 2798 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=mk_rve2( (yyvsp[-1].intval), (yyvsp[-2].rv_expr), (yyvsp[0].rv_expr));}
-#line 9965 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9967 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 672:
@@ -9984,145 +9986,145 @@ yyreduce:
 				(yyval.rv_expr)=mk_rve2((yyvsp[-1].intval), (yyvsp[-2].rv_expr), (yyvsp[0].rv_expr));
 			}
 		}
-#line 9988 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9990 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 673:
 #line 2817 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=mk_rve2(RVE_LAND_OP, (yyvsp[-2].rv_expr), (yyvsp[0].rv_expr));}
-#line 9994 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 9996 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 674:
 #line 2818 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=mk_rve2(RVE_LOR_OP, (yyvsp[-2].rv_expr), (yyvsp[0].rv_expr));}
-#line 10000 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10002 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 675:
 #line 2819 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=(yyvsp[-1].rv_expr);}
-#line 10006 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10008 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 676:
 #line 2820 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=mk_rve1(RVE_STRLEN_OP, (yyvsp[-1].rv_expr));}
-#line 10012 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10014 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 677:
 #line 2821 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.rv_expr)=mk_rve1(RVE_STREMPTY_OP, (yyvsp[-1].rv_expr));}
-#line 10018 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10020 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 678:
 #line 2822 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=mk_rve1(RVE_DEFINED_OP, (yyvsp[0].rv_expr));}
-#line 10024 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10026 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 679:
 #line 2823 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10030 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10032 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 680:
 #line 2824 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10036 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10038 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 681:
 #line 2825 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10042 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10044 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 682:
 #line 2826 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10048 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10050 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 683:
 #line 2827 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10054 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10056 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 684:
 #line 2828 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10060 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10062 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 685:
 #line 2829 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10066 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10068 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 686:
 #line 2830 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10072 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10074 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 687:
 #line 2831 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10078 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10080 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 688:
 #line 2832 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10084 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10086 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 689:
 #line 2834 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10090 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10092 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 690:
 #line 2836 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10096 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10098 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 691:
 #line 2837 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10102 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10104 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 692:
 #line 2838 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10108 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10110 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 693:
 #line 2839 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10114 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10116 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 694:
 #line 2840 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10120 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10122 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 695:
 #line 2841 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.rv_expr)=0; yyerror("bad expression"); }
-#line 10126 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10128 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 696:
@@ -10131,229 +10133,229 @@ yyreduce:
 														 	  RVE_ST, (yyvsp[0].rv_expr));
 											set_cfg_pos((yyval.action));
 										}
-#line 10135 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10137 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 697:
 #line 2862 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval) = 1; }
-#line 10141 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10143 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 698:
 #line 2863 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval) = 0; }
-#line 10147 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10149 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 699:
 #line 2864 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.intval) = -1; }
-#line 10153 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10155 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 700:
 #line 2867 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_T, 2, URIHOST_ST, 0, URIPORT_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10159 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10161 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 701:
 #line 2868 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(	FORWARD_T, 2, STRING_ST, (yyvsp[-1].strval), NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10165 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10167 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 702:
 #line 2869 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(	FORWARD_T, 2, STRING_ST, (yyvsp[-1].strval), NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10171 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10173 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 703:
 #line 2870 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(	FORWARD_T, 2, IP_ST, (void*)(yyvsp[-1].ipaddr), NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10177 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10179 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 704:
 #line 2871 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_T, 2, STRING_ST, (yyvsp[-3].strval), NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10183 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10185 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 705:
 #line 2872 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=mk_action(FORWARD_T, 2, STRING_ST, (yyvsp[-3].strval), NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10189 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10191 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 706:
 #line 2873 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_T, 2, IP_ST, (void*)(yyvsp[-3].ipaddr), NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10195 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10197 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 707:
 #line 2874 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_T, 2, URIHOST_ST, 0, URIPORT_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10201 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10203 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 708:
 #line 2875 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=mk_action(FORWARD_T, 2, URIHOST_ST, 0, NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10207 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10209 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 709:
 #line 2876 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_T, 2, URIHOST_ST, 0, NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10213 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10215 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 710:
 #line 2877 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10219 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10221 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 711:
 #line 2878 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad forward argument"); }
-#line 10225 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10227 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 712:
 #line 2879 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_UDP_T, 2, STRING_ST, (yyvsp[-1].strval), NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10231 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10233 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 713:
 #line 2880 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_UDP_T, 2, STRING_ST, (yyvsp[-1].strval), NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10237 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10239 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 714:
 #line 2881 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_UDP_T, 2, IP_ST, (void*)(yyvsp[-1].ipaddr), NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10243 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10245 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 715:
 #line 2882 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_UDP_T, 2, STRING_ST, (yyvsp[-3].strval), NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10249 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10251 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 716:
 #line 2883 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=mk_action(FORWARD_UDP_T, 2, STRING_ST, (yyvsp[-3].strval), NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10255 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10257 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 717:
 #line 2884 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_UDP_T, 2, IP_ST, (void*)(yyvsp[-3].ipaddr), NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10261 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10263 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 718:
 #line 2885 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=mk_action(FORWARD_UDP_T, 2, URIHOST_ST, 0, URIPORT_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10267 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10269 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 719:
 #line 2886 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_UDP_T, 2, URIHOST_ST, 0, NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10273 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10275 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 720:
 #line 2887 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_UDP_T, 2, URIHOST_ST, 0, NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10279 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10281 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 721:
 #line 2888 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10285 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10287 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 722:
 #line 2889 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad forward_udp argument"); }
-#line 10291 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10293 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 723:
 #line 2890 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_TCP_T, 2, STRING_ST, (yyvsp[-1].strval), NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10297 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10299 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 724:
 #line 2891 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_TCP_T, 2, STRING_ST, (yyvsp[-1].strval), NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10303 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10305 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 725:
 #line 2892 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_TCP_T, 2, IP_ST, (void*)(yyvsp[-1].ipaddr), NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10309 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10311 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 726:
 #line 2893 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_TCP_T, 2, STRING_ST, (yyvsp[-3].strval), NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10315 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10317 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 727:
 #line 2894 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=mk_action(FORWARD_TCP_T, 2, STRING_ST, (yyvsp[-3].strval), NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10321 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10323 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 728:
 #line 2895 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_TCP_T, 2, IP_ST, (void*)(yyvsp[-3].ipaddr), NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10327 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10329 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 729:
 #line 2896 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=mk_action(FORWARD_TCP_T, 2, URIHOST_ST, 0, URIPORT_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10333 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10335 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 730:
 #line 2897 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_TCP_T, 2, URIHOST_ST, 0, NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10339 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10341 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 731:
 #line 2898 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORWARD_TCP_T, 2, URIHOST_ST, 0, NUMBER_ST, 0); set_cfg_pos((yyval.action)); }
-#line 10345 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10347 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 732:
 #line 2899 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10351 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10353 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 733:
 #line 2900 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad forward_tcp argument"); }
-#line 10357 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10359 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 734:
@@ -10366,7 +10368,7 @@ yyreduce:
 			yyerror("tls support not compiled in");
 		#endif
 	}
-#line 10370 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10372 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 735:
@@ -10379,7 +10381,7 @@ yyreduce:
 			yyerror("tls support not compiled in");
 		#endif
 	}
-#line 10383 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10385 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 736:
@@ -10392,7 +10394,7 @@ yyreduce:
 			yyerror("tls support not compiled in");
 		#endif
 	}
-#line 10396 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10398 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 737:
@@ -10405,7 +10407,7 @@ yyreduce:
 			yyerror("tls support not compiled in");
 		#endif
 	}
-#line 10409 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10411 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 738:
@@ -10418,7 +10420,7 @@ yyreduce:
 			yyerror("tls support not compiled in");
 		#endif
 	}
-#line 10422 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10424 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 739:
@@ -10431,7 +10433,7 @@ yyreduce:
 			yyerror("tls support not compiled in");
 		#endif
 					}
-#line 10435 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10437 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 740:
@@ -10444,7 +10446,7 @@ yyreduce:
 			yyerror("tls support not compiled in");
 		#endif
 	}
-#line 10448 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10450 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 741:
@@ -10457,7 +10459,7 @@ yyreduce:
 			yyerror("tls support not compiled in");
 		#endif
 	}
-#line 10461 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10463 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 742:
@@ -10470,20 +10472,20 @@ yyreduce:
 			yyerror("tls support not compiled in");
 		#endif
 	}
-#line 10474 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10476 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 743:
 #line 2973 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10480 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10482 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 744:
 #line 2974 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0;
 									yyerror("bad forward_tls argument"); }
-#line 10487 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10489 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 745:
@@ -10496,7 +10498,7 @@ yyreduce:
 			yyerror("sctp support not compiled in");
 		#endif
 	}
-#line 10500 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10502 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 746:
@@ -10509,7 +10511,7 @@ yyreduce:
 			yyerror("sctp support not compiled in");
 		#endif
 	}
-#line 10513 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10515 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 747:
@@ -10522,7 +10524,7 @@ yyreduce:
 			yyerror("sctp support not compiled in");
 		#endif
 	}
-#line 10526 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10528 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 748:
@@ -10536,7 +10538,7 @@ yyreduce:
 			yyerror("sctp support not compiled in");
 		#endif
 	}
-#line 10540 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10542 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 749:
@@ -10550,7 +10552,7 @@ yyreduce:
 			yyerror("sctp support not compiled in");
 		#endif
 	}
-#line 10554 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10556 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 750:
@@ -10564,7 +10566,7 @@ yyreduce:
 			yyerror("sctp support not compiled in");
 		#endif
 					}
-#line 10568 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10570 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 751:
@@ -10577,7 +10579,7 @@ yyreduce:
 			yyerror("sctp support not compiled in");
 		#endif
 	}
-#line 10581 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10583 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 752:
@@ -10591,7 +10593,7 @@ yyreduce:
 			yyerror("sctp support not compiled in");
 		#endif
 	}
-#line 10595 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10597 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 753:
@@ -10604,20 +10606,20 @@ yyreduce:
 			yyerror("tls support not compiled in");
 		#endif
 	}
-#line 10608 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10610 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 754:
 #line 3052 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10614 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10616 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 755:
 #line 3053 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0;
 									yyerror("bad forward_sctp argument"); }
-#line 10621 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10623 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 756:
@@ -10625,25 +10627,25 @@ yyreduce:
     {(yyval.action)=mk_action(LOG_T, 2, NUMBER_ST,
 										(void*)(L_DBG+1), STRING_ST, (yyvsp[-1].strval));
 									set_cfg_pos((yyval.action)); }
-#line 10629 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10631 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 757:
 #line 3058 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=mk_action(LOG_T, 2, NUMBER_ST, (void*)(yyvsp[-3].intval), STRING_ST, (yyvsp[-1].strval)); set_cfg_pos((yyval.action)); }
-#line 10635 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10637 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 758:
 #line 3059 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10641 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10643 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 759:
 #line 3060 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad log argument"); }
-#line 10647 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10649 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 760:
@@ -10655,7 +10657,7 @@ yyreduce:
 													(void*)(yyvsp[-1].intval));
 							set_cfg_pos((yyval.action));
 									}
-#line 10659 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10661 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 761:
@@ -10667,13 +10669,13 @@ yyreduce:
 										(void*)(long)i_tmp);
 							set_cfg_pos((yyval.action));
 									}
-#line 10671 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10673 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 762:
 #line 3075 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')'?"); }
-#line 10677 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10679 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 763:
@@ -10684,7 +10686,7 @@ yyreduce:
 							(yyval.action)=mk_action(RESETFLAG_T, 1, NUMBER_ST, (void*)(yyvsp[-1].intval));
 							set_cfg_pos((yyval.action));
 									}
-#line 10688 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10690 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 764:
@@ -10696,13 +10698,13 @@ yyreduce:
 										(void*)(long)i_tmp);
 							set_cfg_pos((yyval.action));
 									}
-#line 10700 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10702 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 765:
 #line 3089 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')'?"); }
-#line 10706 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10708 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 766:
@@ -10713,7 +10715,7 @@ yyreduce:
 							(yyval.action)=mk_action(ISFLAGSET_T, 1, NUMBER_ST, (void*)(yyvsp[-1].intval));
 							set_cfg_pos((yyval.action));
 									}
-#line 10717 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10719 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 767:
@@ -10725,13 +10727,13 @@ yyreduce:
 										(void*)(long)i_tmp);
 							set_cfg_pos((yyval.action));
 									}
-#line 10729 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10731 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 768:
 #line 3103 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')'?"); }
-#line 10735 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10737 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 769:
@@ -10742,7 +10744,7 @@ yyreduce:
 		(yyval.action)=mk_action(AVPFLAG_OPER_T, 3, AVP_ST, (yyvsp[-3].attr), NUMBER_ST, (void*)(long)i_tmp, NUMBER_ST, (void*)(yyvsp[-5].intval));
 		set_cfg_pos((yyval.action));
 	}
-#line 10746 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10748 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 770:
@@ -10750,7 +10752,7 @@ yyreduce:
     {
 		(yyval.action)=0; yyerror("error parsing flag name");
 	}
-#line 10754 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10756 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 771:
@@ -10758,19 +10760,19 @@ yyreduce:
     {
 		(yyval.action)=0; yyerror("error parsing first parameter (avp or string)");
 	}
-#line 10762 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10764 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 772:
 #line 3116 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad parameters"); }
-#line 10768 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10770 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 773:
 #line 3117 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')'?"); }
-#line 10774 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10776 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 774:
@@ -10778,19 +10780,19 @@ yyreduce:
     {(yyval.action)=mk_action(ERROR_T, 2, STRING_ST, (yyvsp[-3].strval), STRING_ST, (yyvsp[-1].strval));
 			set_cfg_pos((yyval.action));
 	}
-#line 10782 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10784 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 775:
 #line 3121 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10788 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10790 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 776:
 #line 3122 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad error argument"); }
-#line 10794 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10796 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 777:
@@ -10804,7 +10806,7 @@ yyreduce:
 			YYERROR;
 		}
 	}
-#line 10808 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10810 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 778:
@@ -10818,109 +10820,109 @@ yyreduce:
 			YYERROR;
 		}
 	}
-#line 10822 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10824 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 779:
 #line 3141 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10828 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10830 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 780:
 #line 3142 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad route argument"); }
-#line 10834 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10836 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 781:
 #line 3143 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(EXEC_T, 1, STRING_ST, (yyvsp[-1].strval)); set_cfg_pos((yyval.action)); }
-#line 10840 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10842 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 782:
 #line 3144 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(SET_HOST_T, 1, STRING_ST, (yyvsp[-1].strval)); set_cfg_pos((yyval.action)); }
-#line 10846 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10848 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 783:
 #line 3145 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10852 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10854 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 784:
 #line 3146 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, string expected"); }
-#line 10858 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10860 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 785:
 #line 3147 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(PREFIX_T, 1, STRING_ST,  (yyvsp[-1].strval)); set_cfg_pos((yyval.action)); }
-#line 10864 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10866 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 786:
 #line 3148 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10870 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10872 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 787:
 #line 3149 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, string expected"); }
-#line 10876 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10878 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 788:
 #line 3150 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(STRIP_TAIL_T, 1, NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10882 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10884 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 789:
 #line 3151 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10888 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10890 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 790:
 #line 3152 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, number expected"); }
-#line 10894 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10896 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 791:
 #line 3153 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(STRIP_T, 1, NUMBER_ST, (void*) (yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 10900 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10902 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 792:
 #line 3154 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10906 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10908 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 793:
 #line 3155 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, number expected"); }
-#line 10912 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10914 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 794:
 #line 3156 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(SET_USERPHONE_T, 0); set_cfg_pos((yyval.action)); }
-#line 10918 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10920 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 795:
 #line 3157 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10924 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10926 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 796:
@@ -10929,7 +10931,7 @@ yyreduce:
 			(yyval.action)=mk_action(REMOVE_BRANCH_T, 1, NUMBER_ST, (void*)(yyvsp[-1].intval));
 			set_cfg_pos((yyval.action));
 	}
-#line 10933 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10935 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 797:
@@ -10938,169 +10940,169 @@ yyreduce:
 			(yyval.action)=mk_action(REMOVE_BRANCH_T, 0);
 			set_cfg_pos((yyval.action));
 	}
-#line 10942 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10944 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 798:
 #line 3166 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10948 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10950 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 799:
 #line 3167 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, number expected"); }
-#line 10954 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10956 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 800:
 #line 3168 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(CLEAR_BRANCHES_T, 0); set_cfg_pos((yyval.action)); }
-#line 10960 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10962 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 801:
 #line 3169 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(SET_HOSTPORT_T, 1, STRING_ST, (yyvsp[-1].strval)); set_cfg_pos((yyval.action)); }
-#line 10966 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10968 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 802:
 #line 3170 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10972 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10974 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 803:
 #line 3171 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, string expected"); }
-#line 10978 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10980 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 804:
 #line 3172 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(SET_HOSTPORTTRANS_T, 1, STRING_ST, (yyvsp[-1].strval)); set_cfg_pos((yyval.action)); }
-#line 10984 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10986 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 805:
 #line 3173 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 10990 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10992 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 806:
 #line 3174 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, string expected"); }
-#line 10996 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 10998 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 807:
 #line 3175 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(SET_PORT_T, 1, STRING_ST, (yyvsp[-1].strval)); set_cfg_pos((yyval.action)); }
-#line 11002 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11004 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 808:
 #line 3176 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 11008 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11010 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 809:
 #line 3177 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, string expected"); }
-#line 11014 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11016 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 810:
 #line 3178 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(SET_USER_T, 1, STRING_ST, (yyvsp[-1].strval)); set_cfg_pos((yyval.action)); }
-#line 11020 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11022 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 811:
 #line 3179 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 11026 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11028 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 812:
 #line 3180 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, string expected"); }
-#line 11032 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11034 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 813:
 #line 3181 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(SET_USERPASS_T, 1, STRING_ST, (yyvsp[-1].strval)); set_cfg_pos((yyval.action)); }
-#line 11038 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11040 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 814:
 #line 3182 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 11044 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11046 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 815:
 #line 3183 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, string expected"); }
-#line 11050 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11052 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 816:
 #line 3184 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(SET_URI_T, 1, STRING_ST,(yyvsp[-1].strval)); set_cfg_pos((yyval.action)); }
-#line 11056 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11058 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 817:
 #line 3185 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 11062 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11064 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 818:
 #line 3186 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, string expected"); }
-#line 11068 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11070 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 819:
 #line 3187 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(REVERT_URI_T, 0); set_cfg_pos((yyval.action)); }
-#line 11074 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11076 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 820:
 #line 3188 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(REVERT_URI_T, 0); set_cfg_pos((yyval.action)); }
-#line 11080 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11082 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 821:
 #line 3189 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(FORCE_RPORT_T, 0); set_cfg_pos((yyval.action)); }
-#line 11086 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11088 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 822:
 #line 3190 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=mk_action(FORCE_RPORT_T, 0); set_cfg_pos((yyval.action)); }
-#line 11092 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11094 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 823:
 #line 3191 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(ADD_LOCAL_RPORT_T, 0); set_cfg_pos((yyval.action)); }
-#line 11098 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11100 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 824:
 #line 3192 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=mk_action(ADD_LOCAL_RPORT_T, 0); set_cfg_pos((yyval.action)); }
-#line 11104 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11106 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 825:
@@ -11113,7 +11115,7 @@ yyreduce:
 			yyerror("tcp support not compiled in");
 		#endif
 	}
-#line 11117 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11119 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 826:
@@ -11126,7 +11128,7 @@ yyreduce:
 			yyerror("tcp support not compiled in");
 		#endif
 	}
-#line 11130 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11132 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 827:
@@ -11139,25 +11141,25 @@ yyreduce:
 			yyerror("tcp support not compiled in");
 		#endif
 	}
-#line 11143 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11145 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 828:
 #line 3217 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=0; yyerror("bad argument, number expected"); }
-#line 11149 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11151 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 829:
 #line 3219 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=mk_action(UDP_MTU_TRY_PROTO_T, 1, NUMBER_ST, (yyvsp[-1].intval)); set_cfg_pos((yyval.action)); }
-#line 11155 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11157 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 830:
 #line 3221 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, UDP, TCP, TLS or SCTP expected"); }
-#line 11161 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11163 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 831:
@@ -11173,19 +11175,19 @@ yyreduce:
 			set_cfg_pos((yyval.action));
 		}
 	}
-#line 11177 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11179 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 832:
 #line 3233 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, string expected"); }
-#line 11183 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11185 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 833:
 #line 3234 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 11189 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11191 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 834:
@@ -11206,19 +11208,19 @@ yyreduce:
 			}
 		}
 	}
-#line 11210 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11212 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 835:
 #line 3251 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad argument, string expected"); }
-#line 11216 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11218 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 836:
 #line 3252 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 11222 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11224 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 837:
@@ -11227,7 +11229,7 @@ yyreduce:
 		(yyval.action)=mk_action(FORCE_SEND_SOCKET_T, 1, SOCKID_ST, (yyvsp[-1].sockid));
 		set_cfg_pos((yyval.action));
 	}
-#line 11231 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11233 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 838:
@@ -11235,13 +11237,13 @@ yyreduce:
     {
 		(yyval.action)=0; yyerror("bad argument, [proto:]host[:port] expected");
 	}
-#line 11239 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11241 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 839:
 #line 3260 "core/cfg.y" /* yacc.c:1646  */
     {(yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 11245 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11247 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 840:
@@ -11249,7 +11251,7 @@ yyreduce:
     {
 		(yyval.action)=mk_action(SET_FWD_NO_CONNECT_T, 0); set_cfg_pos((yyval.action));
 	}
-#line 11253 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11255 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 841:
@@ -11257,7 +11259,7 @@ yyreduce:
     {
 		(yyval.action)=mk_action(SET_FWD_NO_CONNECT_T, 0); set_cfg_pos((yyval.action));
 	}
-#line 11261 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11263 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 842:
@@ -11265,7 +11267,7 @@ yyreduce:
     {
 		(yyval.action)=mk_action(SET_RPL_NO_CONNECT_T, 0); set_cfg_pos((yyval.action));
 	}
-#line 11269 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11271 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 843:
@@ -11273,7 +11275,7 @@ yyreduce:
     {
 		(yyval.action)=mk_action(SET_RPL_NO_CONNECT_T, 0); set_cfg_pos((yyval.action));
 	}
-#line 11277 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11279 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 844:
@@ -11281,7 +11283,7 @@ yyreduce:
     {
 		(yyval.action)=mk_action(SET_FWD_CLOSE_T, 0); set_cfg_pos((yyval.action));
 	}
-#line 11285 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11287 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 845:
@@ -11289,7 +11291,7 @@ yyreduce:
     {
 		(yyval.action)=mk_action(SET_FWD_CLOSE_T, 0); set_cfg_pos((yyval.action));
 	}
-#line 11293 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11295 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 846:
@@ -11297,7 +11299,7 @@ yyreduce:
     {
 		(yyval.action)=mk_action(SET_RPL_CLOSE_T, 0); set_cfg_pos((yyval.action));
 	}
-#line 11301 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11303 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 847:
@@ -11305,7 +11307,7 @@ yyreduce:
     {
 		(yyval.action)=mk_action(SET_RPL_CLOSE_T, 0); set_cfg_pos((yyval.action));
 	}
-#line 11309 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11311 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 848:
@@ -11313,7 +11315,7 @@ yyreduce:
     {
 		(yyval.action)=mk_action(CFG_SELECT_T, 2, STRING_ST, (yyvsp[-3].strval), NUMBER_ST, (void*)(yyvsp[-1].intval)); set_cfg_pos((yyval.action));
 	}
-#line 11317 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11319 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 849:
@@ -11321,19 +11323,19 @@ yyreduce:
     {
 		(yyval.action)=mk_action(CFG_SELECT_T, 2, STRING_ST, (yyvsp[-3].strval), RVE_ST, (yyvsp[-1].rv_expr)); set_cfg_pos((yyval.action));
 	}
-#line 11325 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11327 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 850:
 #line 3291 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 11331 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11333 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 851:
 #line 3292 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad arguments, string and number expected"); }
-#line 11337 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11339 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 852:
@@ -11341,26 +11343,26 @@ yyreduce:
     {
 		(yyval.action)=mk_action(CFG_RESET_T, 1, STRING_ST, (yyvsp[-1].strval)); set_cfg_pos((yyval.action));
 	}
-#line 11345 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11347 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 853:
 #line 3296 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("missing '(' or ')' ?"); }
-#line 11351 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11353 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 854:
 #line 3297 "core/cfg.y" /* yacc.c:1646  */
     { (yyval.action)=0; yyerror("bad arguments, string expected"); }
-#line 11357 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11359 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 855:
 #line 3298 "core/cfg.y" /* yacc.c:1646  */
     {mod_func_action = mk_action(MODULE0_T, 2, MODEXP_ST, NULL, NUMBER_ST,
 			0); }
-#line 11364 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11366 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 856:
@@ -11392,25 +11394,25 @@ yyreduce:
 		(yyval.action) = mod_func_action;
 		set_cfg_pos((yyval.action));
 	}
-#line 11396 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11398 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 857:
 #line 3326 "core/cfg.y" /* yacc.c:1646  */
     { yyerror("'('')' expected (function call)");}
-#line 11402 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11404 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 859:
 #line 3330 "core/cfg.y" /* yacc.c:1646  */
     { }
-#line 11408 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11410 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 860:
 #line 3331 "core/cfg.y" /* yacc.c:1646  */
     {}
-#line 11414 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11416 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 861:
@@ -11429,7 +11431,7 @@ yyreduce:
 			YYERROR;
 		}
 	}
-#line 11433 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11435 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 862:
@@ -11438,7 +11440,7 @@ yyreduce:
 		(yyval.action)=mk_action(DROP_T, 2, NUMBER_ST, 0, NUMBER_ST,
 						(void*)(DROP_R_F|EXIT_R_F)); set_cfg_pos((yyval.action));
 	}
-#line 11442 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11444 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 863:
@@ -11447,7 +11449,7 @@ yyreduce:
 		(yyval.action)=mk_action(DROP_T, 2, RVE_ST, (yyvsp[0].rv_expr), NUMBER_ST,
 						(void*)(DROP_R_F|EXIT_R_F)); set_cfg_pos((yyval.action));
 	}
-#line 11451 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11453 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 864:
@@ -11456,7 +11458,7 @@ yyreduce:
 		(yyval.action)=mk_action(DROP_T, 2, NUMBER_ST, 0, NUMBER_ST,
 						(void*)(DROP_R_F|EXIT_R_F)); set_cfg_pos((yyval.action));
 	}
-#line 11460 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11462 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 865:
@@ -11466,7 +11468,7 @@ yyreduce:
 						(void*)EXIT_R_F);
 		set_cfg_pos((yyval.action));
 	}
-#line 11470 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11472 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 866:
@@ -11475,7 +11477,7 @@ yyreduce:
 		(yyval.action)=mk_action(DROP_T, 2, RVE_ST, (yyvsp[0].rv_expr), NUMBER_ST, (void*)EXIT_R_F);
 		set_cfg_pos((yyval.action));
 	}
-#line 11479 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11481 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 867:
@@ -11485,7 +11487,7 @@ yyreduce:
 						(void*)EXIT_R_F);
 		set_cfg_pos((yyval.action));
 	}
-#line 11489 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11491 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 868:
@@ -11494,7 +11496,7 @@ yyreduce:
 		(yyval.action)=mk_action(DROP_T, 2, NUMBER_ST, (void*)1, NUMBER_ST,
 						(void*)RETURN_R_F); set_cfg_pos((yyval.action));
 	}
-#line 11498 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11500 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 869:
@@ -11503,7 +11505,7 @@ yyreduce:
 		(yyval.action)=mk_action(DROP_T, 2, NUMBER_ST, (void*)1, NUMBER_ST,
 						(void*)RETURN_R_F); set_cfg_pos((yyval.action));
 	}
-#line 11507 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11509 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 870:
@@ -11512,7 +11514,7 @@ yyreduce:
 		(yyval.action)=mk_action(DROP_T, 2, RVE_ST, (yyvsp[0].rv_expr), NUMBER_ST, (void*)RETURN_R_F);
 		set_cfg_pos((yyval.action));
 	}
-#line 11516 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11518 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
   case 871:
@@ -11521,11 +11523,11 @@ yyreduce:
 		(yyval.action)=mk_action(DROP_T, 2, NUMBER_ST, 0, NUMBER_ST, (void*)BREAK_R_F);
 		set_cfg_pos((yyval.action));
 	}
-#line 11525 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11527 "core/cfg.tab.c" /* yacc.c:1646  */
     break;
 
 
-#line 11529 "core/cfg.tab.c" /* yacc.c:1646  */
+#line 11531 "core/cfg.tab.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
